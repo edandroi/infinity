@@ -40,9 +40,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrawShapes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592867343206</updated>
       <workItem from="1592867347934" duration="4105000" />
-      <workItem from="1592876058951" duration="4935000" />
+      <workItem from="1592876058951" duration="5997000" />
     </task>
     <servers />
   </component>
