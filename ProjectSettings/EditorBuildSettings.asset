@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/01Stars.unity
     guid: 1ce10a916e9194cab8f40015e24e5b56
+  - enabled: 1
+    path: Assets/Scenes/02Pi.unity
+    guid: 19058e35b05814aff8731137833e6a24
   m_configObjects: {}

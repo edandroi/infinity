@@ -17,6 +17,9 @@ public class GameController : MonoBehaviour
         // Game Manager
         Services.GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         
+        // Game Manager
+        Services.Player = FindObjectOfType<Player>();
+        
         // Audio Manager
         var audioManagerGameObject = new GameObject("AudioManager");
         Services.AudioManager = audioManagerGameObject.AddComponent<AudioManager>();
