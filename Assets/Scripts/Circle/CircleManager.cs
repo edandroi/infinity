@@ -13,9 +13,6 @@ public class CircleManager : MonoBehaviour
     void Start()
     {
         circles = new List<GameObject>();
-        var newCircle = Instantiate(circleObj, new Vector3(0, 0, 0), Quaternion.identity);
-        newCircle.transform.parent = gameObject.transform;
-        circles.Add(newCircle);
         _Player = FindObjectOfType<Player>();
     }
     

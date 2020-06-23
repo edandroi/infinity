@@ -12,11 +12,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -33,6 +38,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrawShapes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
       </list>
     </option>
   </component>
@@ -83,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592867343206</updated>
       <workItem from="1592867347934" duration="4105000" />
-      <workItem from="1592876058951" duration="2112000" />
+      <workItem from="1592876058951" duration="4935000" />
     </task>
     <servers />
   </component>

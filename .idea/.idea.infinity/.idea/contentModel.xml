@@ -15,6 +15,16 @@
           <e p="FollowMouse.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Grief" t="Include">
+            <e p="Darker.cs" t="Include" />
+            <e p="SkyManager.cs" t="Include" />
+            <e p="StarFall.cs" t="Include" />
+          </e>
+          <e p="Kid" t="Include">
+            <e p="DrawShapes.cs" t="Include" />
+            <e p="ShapeBehaviour.cs" t="Include" />
+            <e p="ShapesGenerator.cs" t="Include" />
+          </e>
           <e p="Player.cs" t="Include" />
           <e p="Services.cs" t="Include" />
           <e p="Stars" t="Include">
