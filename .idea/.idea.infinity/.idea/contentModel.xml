@@ -9,10 +9,15 @@
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="ButtonInfinity.cs" t="Include" />
+          <e p="CircleDraw.cs" t="Include" />
+          <e p="CircleManager.cs" t="Include" />
+          <e p="FollowMouse.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Light.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
           <e p="Services.cs" t="Include" />
+          <e p="StarManager.cs" t="Include" />
           <e p="Stars.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
