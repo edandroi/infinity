@@ -6,11 +6,22 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="explore.txt" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="explore.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="ButtonInfinity.cs" t="Include" />
           <e p="Circle" t="Include">
             <e p="CircleManager.cs" t="Include" />
+          </e>
+          <e p="Covid" t="Include">
+            <e p="Covid.cs" t="Include" />
+          </e>
+          <e p="Explore" t="Include">
+            <e p="ExploreManager.cs" t="Include" />
+            <e p="TextObject.cs" t="Include" />
           </e>
           <e p="FollowMouse.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
@@ -23,7 +34,7 @@
           <e p="Kid" t="Include">
             <e p="DrawShapes.cs" t="Include" />
             <e p="ShapeBehaviour.cs" t="Include" />
-            <e p="ShapesGenerator.cs" t="Include" />
+            <e p="ShapeManager.cs" t="Include" />
           </e>
           <e p="Player.cs" t="Include" />
           <e p="Services.cs" t="Include" />

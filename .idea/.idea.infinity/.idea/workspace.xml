@@ -14,13 +14,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -28,21 +33,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StarManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CircleDraw.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrawShapes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DrawShapes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +104,12 @@
       <option name="presentableId" value="Default" />
       <updated>1592867343206</updated>
       <workItem from="1592867347934" duration="4105000" />
-      <workItem from="1592876058951" duration="5997000" />
+      <workItem from="1592876058951" duration="6717000" />
+      <workItem from="1592966410374" duration="1287000" />
+      <workItem from="1593015949112" duration="447000" />
+      <workItem from="1593016547632" duration="2287000" />
+      <workItem from="1593023784116" duration="5348000" />
+      <workItem from="1593132546106" duration="2930000" />
     </task>
     <servers />
   </component>

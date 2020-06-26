@@ -15,31 +15,33 @@ public class Darker : MonoBehaviour
     public  UnityEvent noStars_Event = new UnityEvent();
     
     private SpriteRenderer _renderer;
+
+    public float time;
     void Start()
     {
-        _skyManager = FindObjectOfType<SkyManager>();
-        numOfStars = _skyManager.numOfTotalStars;
-        
         _renderer = GetComponent<SpriteRenderer>();
         _Color = _renderer.color;
         targetColor = Camera.main.backgroundColor;
-        Debug.Log(targetColor);
-        Debug.Log(_renderer.color);
-        
+
         darker_Event.AddListener(GetDarker);
         noStars_Event.AddListener(StarsGone);
+        
+        _skyManager = FindObjectOfType<SkyManager>();
+        numOfStars = _skyManager.numOfTotalStars;
     }
     
     void Update()
     {
-        
+        Debug.Log(time);
     }
 
+    private float multiplier = 1.5f;
     void GetDarker()
     {
         if (_renderer.color != targetColor)
         {
-            _renderer.color = Color.Lerp(_renderer.color, targetColor, .08f);
+            _renderer.color = Color.Lerp(_renderer.color, targetColor, time*multiplier);
+            multiplier += .1f;
         }
     }
 

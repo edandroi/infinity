@@ -97,7 +97,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -152,3 +152,4 @@ MonoBehaviour:
   triangle: {fileID: 3371527936469635951, guid: 30b4a4ad5a88b4be69b5d322c2f6a187,
     type: 3}
   hexagon: {fileID: 3321387291508525214, guid: cbbfd5c3a2e2b4bf8bf486b36161a1cd, type: 3}
+  initial: no

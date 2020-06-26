@@ -5,15 +5,25 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool nextScene = false;
-    void Start()
+    
+    public static GameManager instance;
+    void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     
     void Update()
     {
         if (nextScene)
         {
+//            Debug.Log("next scene called now");
             StartCoroutine(NextScene(3));
         }
     }

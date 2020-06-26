@@ -20,7 +20,7 @@ public class Stars : MonoBehaviour
 
         m_Manager = FindObjectOfType<StarManager>();
     }
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))

@@ -11,11 +11,42 @@ public class ShapeBehaviour : MonoBehaviour
     public GameObject triangle;
     public GameObject hexagon;
 
+    public string initial = "no";
+
+    private ShapeManager _shapeManager;
+
     private Rigidbody2D rb;
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(new Vector2(Random.Range(-1,1),Random.Range(-1,1))*Random.Range(3,10));
+        _shapeManager = FindObjectOfType<ShapeManager>();
+        if (initial == "no")
+        {
+            rb = GetComponent<Rigidbody2D>();
+            rb.drag = 2;
+
+            int i = Random.Range(0, 4);
+            float force = 3f;
+
+            switch (i)
+            {
+                case 0: 
+                    rb.AddForce(new Vector2(.1f,0)*force, ForceMode2D.Impulse);
+                    break;
+                case 1: 
+                    rb.AddForce(new Vector2(.1f* -1,0)*force, ForceMode2D.Impulse);
+                    break;
+                case 2: 
+                    rb.AddForce(new Vector2(0,0.1f)*force, ForceMode2D.Impulse);
+                    break;
+                case 3: 
+                    rb.AddForce(new Vector2(0,.1f * -1)*force, ForceMode2D.Impulse);
+                    break;
+            }
+
+            StartCoroutine(ChangeDrag(.3f)); 
+        }
+        
+        _shapeManager.AddShape(gameObject);
     }
 
     // Update is called once per frame
@@ -23,6 +54,12 @@ public class ShapeBehaviour : MonoBehaviour
     {
         if (generate)
             GenerateShapes();
+    }
+    
+    IEnumerator ChangeDrag(float seconds)
+    {
+        yield return new WaitForSecondsRealtime(seconds);
+        rb.drag = .3f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -39,7 +76,7 @@ public class ShapeBehaviour : MonoBehaviour
     }
 
     private bool generate = false;
-    private float remainingTime = .5f;
+    private float remainingTime = .4f;
     void GenerateShapes()
     {
         remainingTime -= Time.deltaTime;
@@ -54,24 +91,25 @@ public class ShapeBehaviour : MonoBehaviour
                 switch (num)
                 {
                     case 0:
-                        var Shape1 = Instantiate(square);
-                        Shape1.transform.localScale = transform.localScale * .8f;
+                        var Shape1 = Instantiate(square, transform.position, Quaternion.identity);
+                        Shape1.transform.localScale = transform.localScale * .9f;
                         break;
                     case 1:
-                        var Shape2 = Instantiate(triangle);
-                        Shape2.transform.localScale = transform.localScale * .8f;
+                        var Shape2 = Instantiate(triangle, transform.position, Quaternion.identity);
+                        Shape2.transform.localScale = transform.localScale * .9f;
                         break;
                     case 2:
-                        var Shape3 = Instantiate(hexagon);
-                        Shape3.transform.localScale = transform.localScale * .8f;
+                        var Shape3 = Instantiate(hexagon, transform.position, Quaternion.identity);
+                        Shape3.transform.localScale = transform.localScale * .9f;
                         break;
                     case 3:
-                        var Shape4 = Instantiate(polygon);
-                        Shape4.transform.localScale = transform.localScale * .8f;
+                        var Shape4 = Instantiate(polygon, transform.position, Quaternion.identity);
+                        Shape4.transform.localScale = transform.localScale * .9f;
                         break;
                 }
 
             }
+            _shapeManager.RemoveShape(gameObject);
             Destroy(gameObject);
         }
     }

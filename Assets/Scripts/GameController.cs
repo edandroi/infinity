@@ -15,10 +15,10 @@ public class GameController : MonoBehaviour
         Services.GameController = this;	
 		
         // Game Manager
-        Services.GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        
+        Services.GameManager =this.gameObject.GetComponent<GameManager>();
+
         // Game Manager
-        Services.Player = FindObjectOfType<Player>();
+        Services.Player = GameObject.FindWithTag("Player").GetComponent<Player>();
         
         // Audio Manager
         var audioManagerGameObject = new GameObject("AudioManager");

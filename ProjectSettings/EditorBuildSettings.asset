@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/02Pi.unity
     guid: 19058e35b05814aff8731137833e6a24
+  - enabled: 1
+    path: Assets/Scenes/03Kid.unity
+    guid: d96b4174cb5a34f6da1900037d6ed645
+  - enabled: 1
+    path: Assets/Scenes/04Grief.unity
+    guid: 00dfa11fb221c4516ab453d3335d6cd7
+  - enabled: 1
+    path: Assets/Scenes/05Covid.unity
+    guid: 811637200e10c49f590360b43ef2d48e
   m_configObjects: {}

@@ -25,7 +25,7 @@ public class CircleManager : MonoBehaviour
 
         if (circles.Count >= 30)
         {
-            Services.GameManager.nextScene = true;
+            GameManager.instance.nextScene = true;
         }
     }
 

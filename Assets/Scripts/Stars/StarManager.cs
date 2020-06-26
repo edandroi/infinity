@@ -13,11 +13,12 @@ public class StarManager : MonoBehaviour
     void Start()
     {
         GenerateStars();
+//        Debug.Log("num of stars total "+numOfTotalStars);
     }
     
     void Update()
     {
-        if (starsFound == numOfTotalStars)
+        if (starsFound >= numOfTotalStars)
         {
             Services.GameManager.nextScene = true;
         }
@@ -33,8 +34,8 @@ public class StarManager : MonoBehaviour
         for (int i = 0; i <= numOfTotalStars; i++)
         {
             Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-            Vector3 spawnPos = new Vector3(Random.Range(-screenSize.x, screenSize.x)* .8f, 
-                Random.Range(-screenSize.y, screenSize.y)*.9f, 0);
+            Vector3 spawnPos = new Vector3(Random.Range(-screenSize.x, screenSize.x)* .85f, 
+                Random.Range(-screenSize.y, screenSize.y)*.85f, 0);
             Instantiate(starObj, spawnPos,Quaternion.identity);
         }
     }
