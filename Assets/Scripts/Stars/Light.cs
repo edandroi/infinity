@@ -23,11 +23,11 @@ public class Light : MonoBehaviour
 
         if (timer < 0)
         {
-            float scaler = Random.Range(originalScale - .5f, originalScale );
+            float scaler = Random.Range(originalScale - 2f, originalScale );
             transform.localScale= new Vector3(scaler, scaler, 1);
-            m_Color.a = Random.Range(.5f, .8f);
-            m_SpriteRenderer.color = m_Color;
-            m_Color = m_SpriteRenderer.color;
+//            m_Color.a = Random.Range(.5f, .8f);
+//            m_SpriteRenderer.color = m_Color;
+//            m_Color = m_SpriteRenderer.color;
             timer = timerStore;
         }
     }
