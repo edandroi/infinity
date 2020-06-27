@@ -467,7 +467,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -659, y: -402}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264771241
 MonoBehaviour:
@@ -484,6 +484,7 @@ MonoBehaviour:
   textChanged_Event:
     m_PersistentCalls:
       m_Calls: []
+  _rect: {fileID: 0}
 --- !u!114 &1264771242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -537,7 +538,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -633,7 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 4900000, guid: 8fe1b7a1efc2c43a9aeaeed1d642bb3c, type: 3}
   textNow: 
-  changeTextTimer: 2
+  changeTextTimer: 0.4
   changeText: 0
 --- !u!4 &1325663343
 Transform:

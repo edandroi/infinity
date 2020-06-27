@@ -14,6 +14,9 @@ public class ExploreManager : MonoBehaviour
 
     private float remainingTime;
     public float changeTextTimer;
+
+    private int counter = 0;
+    public int target = 10;
     void Start()
     {
         _displayText = FindObjectOfType<TextObject>();
@@ -38,8 +41,12 @@ public class ExploreManager : MonoBehaviour
         {
             PickText();
             _displayText.textChanged_Event.Invoke();
+            counter++;
             changeText = false;
         }
+
+        if (counter >= target)
+            Services.GameManager.nextScene = true;
     }
 
     void CreateTextArray()

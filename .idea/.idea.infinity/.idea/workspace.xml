@@ -52,8 +52,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +109,8 @@
       <workItem from="1593015949112" duration="447000" />
       <workItem from="1593016547632" duration="2287000" />
       <workItem from="1593023784116" duration="5348000" />
-      <workItem from="1593132546106" duration="2930000" />
+      <workItem from="1593132546106" duration="3076000" />
+      <workItem from="1593218722211" duration="2525000" />
     </task>
     <servers />
   </component>
