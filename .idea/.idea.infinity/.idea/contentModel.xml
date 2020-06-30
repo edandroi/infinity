@@ -38,6 +38,7 @@
           </e>
           <e p="Player.cs" t="Include" />
           <e p="Services.cs" t="Include" />
+          <e p="SpriteAnimation.cs" t="Include" />
           <e p="Stars" t="Include">
             <e p="Light.cs" t="Include" />
             <e p="StarManager.cs" t="Include" />

@@ -41,7 +41,7 @@ public class CircleManager : MonoBehaviour
             {
 //                circles[i].transform.position += new Vector3(0, 0, -.1f);
                 circles[i].GetComponent<SpriteRenderer>().sortingOrder -= 1;
-                circles[i].transform.localScale *= 1.2f;
+                circles[i].transform.localScale *= Random.Range(1.1f , 1.5f);
             }
 
             var newCircle = Instantiate(circleObj, new Vector3(0, 0, 0), Quaternion.identity);
@@ -55,7 +55,5 @@ public class CircleManager : MonoBehaviour
             newCircle.transform.parent = gameObject.transform;
             remainingTime = timer;
         }
-
-        
     }
 }
