@@ -40,12 +40,7 @@ public class Covid : MonoBehaviour
             {
                 newCovid.transform.position = new Vector3(-screenSize.x + _spriteRenderer.bounds.size.x*i*multiplier, screenSize.y, 0);
             }
-            
-            
-
         }
-        
-        
     }
 
     // Update is called once per frame

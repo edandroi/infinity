@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Random = UnityEngine.Random;
+
+public class RotateAround : MonoBehaviour
+{
+    float rotationLeft= 360;
+    float rotationsSpeed;
+
+    private void Start()
+    {
+        rotationsSpeed = Random.Range(1.5f, 2.5f);
+    }
+
+    void Update()
+    {
+        
+        float rotation=rotationsSpeed*Time.deltaTime;
+        if (rotationLeft > rotation)
+        {
+            rotationLeft-=rotation;
+        }
+        else
+        {
+            rotation=rotationLeft;
+            rotationLeft=0;
+        }
+        transform.Rotate(0,0,rotation);
+    }
+        
+}
+

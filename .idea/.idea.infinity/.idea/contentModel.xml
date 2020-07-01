@@ -37,6 +37,8 @@
             <e p="ShapeManager.cs" t="Include" />
           </e>
           <e p="Player.cs" t="Include" />
+          <e p="RotateAround.cs" t="Include" />
+          <e p="ScaleOnHover.cs" t="Include" />
           <e p="Services.cs" t="Include" />
           <e p="SpriteAnimation.cs" t="Include" />
           <e p="Stars" t="Include">
