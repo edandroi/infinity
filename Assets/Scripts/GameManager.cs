@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
         if (nextScene)
         {
 //            Debug.Log("next scene called now");
-            StartCoroutine(NextScene(3));
+            StartCoroutine(NextScene(2.4f));
         }
     }
     

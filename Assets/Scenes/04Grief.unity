@@ -199,10 +199,15 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 363966930}
+    - target: {fileID: 1184469663897906438, guid: 70270484987e3466fa6e08833f8eaf64,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 1184469663897906439, guid: 70270484987e3466fa6e08833f8eaf64,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 48
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 1184469663897906439, guid: 70270484987e3466fa6e08833f8eaf64,
         type: 3}
@@ -217,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 1184469663897906439, guid: 70270484987e3466fa6e08833f8eaf64,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1184469663897906439, guid: 70270484987e3466fa6e08833f8eaf64,
         type: 3}
@@ -227,7 +232,14 @@ PrefabInstance:
     - target: {fileID: 1184469663897906439, guid: 70270484987e3466fa6e08833f8eaf64,
         type: 3}
       propertyPath: m_text
-      value: Grief feels like infinity on the first encounter
+      value: 'Grief feels like infinity
+
+        on the first encounter.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1184469663897906439, guid: 70270484987e3466fa6e08833f8eaf64,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3243426704448181507, guid: 70270484987e3466fa6e08833f8eaf64,
         type: 3}
@@ -418,17 +430,17 @@ PrefabInstance:
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.0753827
+      value: 0.07058824
       objectReference: {fileID: 0}
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.12677999
+      value: 0.05490196
       objectReference: {fileID: 0}
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.20754719
+      value: 0.12156863
       objectReference: {fileID: 0}
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
@@ -625,7 +637,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -799,15 +811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarFall
       objectReference: {fileID: 0}
-    - target: {fileID: 5991245807890610692, guid: 0fd84ecca84da415d8bf6e5e443e9719,
+    - target: {fileID: 5991245807890610690, guid: 0fd84ecca84da415d8bf6e5e443e9719,
         type: 3}
-      propertyPath: m_SortingLayerID
-      value: -432784611
-      objectReference: {fileID: 0}
-    - target: {fileID: 5991245807890610692, guid: 0fd84ecca84da415d8bf6e5e443e9719,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5991245807890610695, guid: 0fd84ecca84da415d8bf6e5e443e9719,
         type: 3}

@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 65}
+  m_AnchoredPosition: {x: 0, y: 28}
   m_SizeDelta: {x: 400500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1184469663897906436
@@ -264,8 +264,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: They say the universe is infinite.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e6a8da3c75b0481e87f6f65f759ffb8, type: 2}
+  m_sharedMaterial: {fileID: -4779931164828079562, guid: 2e6a8da3c75b0481e87f6f65f759ffb8,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -290,8 +291,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -425,7 +426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 70}
+  m_AnchoredPosition: {x: 0, y: 32}
   m_SizeDelta: {x: 974, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5029719448348818065
@@ -544,7 +545,7 @@ PrefabInstance:
     - target: {fileID: 7910640193995699989, guid: ab67d0bf9e94243a3af784895d00c4b2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 7910640193995699989, guid: ab67d0bf9e94243a3af784895d00c4b2,
         type: 3}
