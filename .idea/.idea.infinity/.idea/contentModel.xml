@@ -20,6 +20,9 @@
             <e p="Covid.cs" t="Include" />
             <e p="CovidObj.cs" t="Include" />
           </e>
+          <e p="Credits" t="Include">
+            <e p="Reveal.cs" t="Include" />
+          </e>
           <e p="Ending" t="Include">
             <e p="Bird.cs" t="Include" />
           </e>

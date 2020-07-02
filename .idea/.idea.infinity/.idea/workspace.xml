@@ -23,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,6 +67,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +126,8 @@
       <workItem from="1593132546106" duration="3076000" />
       <workItem from="1593218722211" duration="3176000" />
       <workItem from="1593460240376" duration="3947000" />
-      <workItem from="1593648704452" duration="2395000" />
+      <workItem from="1593648704452" duration="2623000" />
+      <workItem from="1593659464908" duration="397000" />
     </task>
     <servers />
   </component>
