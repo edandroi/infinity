@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 933968666}
   - component: {fileID: 933968668}
   m_Layer: 0
-  m_Name: CovidEmpty
+  m_Name: CovidManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,6 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   covidObj: {fileID: 1259308434815648709, guid: bcf2c196de5ec401f9a3c155a6667507,
     type: 3}
+  numOfTargetInteraction: 20
 --- !u!4 &933968667
 Transform:
   m_ObjectHideFlags: 0

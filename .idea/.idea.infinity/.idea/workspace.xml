@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpriteAnimation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,6 +62,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
       </list>
     </option>
@@ -120,7 +122,7 @@
       <workItem from="1593132546106" duration="3076000" />
       <workItem from="1593218722211" duration="3176000" />
       <workItem from="1593460240376" duration="3947000" />
-      <workItem from="1593648704452" duration="1078000" />
+      <workItem from="1593648704452" duration="1436000" />
     </task>
     <servers />
   </component>

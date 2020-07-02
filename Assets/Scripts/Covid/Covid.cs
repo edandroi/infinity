@@ -12,7 +12,9 @@ public class Covid : MonoBehaviour
     private Transform covidPre;
 
     private float multiplier = 1.2f;
-    
+
+    private int touchedObj = 0;
+    public int numOfTargetInteraction = 8;
     void Start()
     {
 //        var initialCovid = Instantiate(covidObj, Vector3.zero, Quaternion.identity);
@@ -87,6 +89,15 @@ public class Covid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (touchedObj == numOfTargetInteraction)
+        {
+            Debug.Log("this is true");
+            Services.GameManager.nextScene = true;
+        }
+    }
+
+    public void Touched()
+    {
+        touchedObj++;
     }
 }
