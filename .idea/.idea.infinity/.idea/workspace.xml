@@ -39,7 +39,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Light.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StarManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars.cs" />
@@ -68,6 +67,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" />
       </list>
     </option>
   </component>
@@ -128,6 +128,7 @@
       <workItem from="1593460240376" duration="3947000" />
       <workItem from="1593648704452" duration="2623000" />
       <workItem from="1593659464908" duration="436000" />
+      <workItem from="1593793741209" duration="291000" />
     </task>
     <servers />
   </component>

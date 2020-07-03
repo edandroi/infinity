@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="explore.txt" t="Include" />
         <e p="Resources" t="Include">
+          <e p="explore copy.txt" t="Include" />
           <e p="explore.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">

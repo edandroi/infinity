@@ -6,9 +6,17 @@ using UnityEngine.EventSystems;
 
 public class ButtonInfinity : MonoBehaviour,  IPointerEnterHandler
 {
+
+    public GameObject particles;
+
+    private bool touched = false;
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("overlap now");
+        if (!touched)
+        {
+            Instantiate(particles, Services.Player.transform.position, Quaternion.identity);
+            touched = true;
+        }
         Services.GameManager.nextScene = true;
     }
 }
