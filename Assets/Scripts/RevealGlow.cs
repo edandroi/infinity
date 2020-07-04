@@ -1,31 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.LWRP;
-using UnityEngine.Rendering.Universal;
 
-public class Reveal : MonoBehaviour
+public class RevealGlow : MonoBehaviour
 {
     private Bloom _bloom;
 
     private Volume vol;
 
-   // private float val;
+    // private float val;
     void Start()
     {
         vol = GetComponent<Volume>();
 
-        vol.weight = 1;
+        vol.weight = 0f;
 
 
     }
-    
+
+    private float speed = 4f;
     void Update()
     {
-        if (vol.weight > .15f)
+        if (vol.weight < 1f)
         {
-            vol.weight = Mathf.Lerp(vol.weight, .15f,  Mathf.Sin(vol.weight) * Time.deltaTime * 1.5f);
+            vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight));
+//            speed *= .8f;
         }
     }
 }

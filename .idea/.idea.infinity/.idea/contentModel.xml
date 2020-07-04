@@ -14,6 +14,7 @@
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="ButtonInfinity.cs" t="Include" />
+          <e p="ChangeUiColor.cs" t="Include" />
           <e p="Circle" t="Include">
             <e p="CircleManager.cs" t="Include" />
           </e>
@@ -45,6 +46,7 @@
             <e p="ShapeManager.cs" t="Include" />
           </e>
           <e p="Player.cs" t="Include" />
+          <e p="RevealGlow.cs" t="Include" />
           <e p="RotateAround.cs" t="Include" />
           <e p="ScaleOnHover.cs" t="Include" />
           <e p="Services.cs" t="Include" />

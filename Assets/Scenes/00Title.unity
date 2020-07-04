@@ -121,6 +121,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &122352877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1487294712, guid: 83dec0254d8f149759af1ba8cc6c8942,
+    type: 3}
+  m_PrefabInstance: {fileID: 282728915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &122352882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122352877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e54644cd247f4d84967e89acdd77787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &161384121
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,6 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 675926822}
   - component: {fileID: 675926821}
+  - component: {fileID: 675926823}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -449,8 +468,8 @@ MonoBehaviour:
   isGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 4bfae2cd6d6f54d1aba41aaf5029c149, type: 2}
+  weight: 0
+  sharedProfile: {fileID: 11400000, guid: 8a9948a8321ac44b8a5afd45e3003615, type: 2}
 --- !u!4 &675926822
 Transform:
   m_ObjectHideFlags: 0
@@ -465,6 +484,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &675926823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675926820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eaa919a47234a91be17972a475e573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &815486935 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
@@ -482,6 +513,7 @@ GameObject:
   - component: {fileID: 907697356}
   - component: {fileID: 907697358}
   - component: {fileID: 907697357}
+  - component: {fileID: 907697359}
   m_Layer: 5
   m_Name: Instruction
   m_TagString: Untagged
@@ -536,8 +568,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280223238
+  m_fontColor: {r: 0.023529414, g: 0.023529414, b: 0.121568635, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -627,6 +659,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907697355}
   m_CullTransparentMesh: 0
+--- !u!114 &907697359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907697355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e54644cd247f4d84967e89acdd77787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1619508255
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +938,7 @@ GameObject:
   - component: {fileID: 1657043422}
   - component: {fileID: 1657043424}
   - component: {fileID: 1657043423}
+  - component: {fileID: 1657043425}
   m_Layer: 5
   m_Name: Infinity
   m_TagString: Untagged
@@ -1039,6 +1084,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657043421}
   m_CullTransparentMesh: 0
+--- !u!114 &1657043425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657043421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e54644cd247f4d84967e89acdd77787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1938779548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1128,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.9960728, b: 0.9103774, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
@@ -1342,17 +1399,17 @@ PrefabInstance:
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.07058824
+      value: 0.02460306
       objectReference: {fileID: 0}
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.055110425
+      value: 0.020558922
       objectReference: {fileID: 0}
     - target: {fileID: 7444863950650429348, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.122641504
+      value: 0.13207549
       objectReference: {fileID: 0}
     - target: {fileID: 7444863950650429351, guid: be4dec6fccebb47feaa4d945408688c6,
         type: 3}
