@@ -17,15 +17,13 @@ public class Reveal : MonoBehaviour
         vol = GetComponent<Volume>();
 
         vol.weight = 1;
-
-
     }
     
     void Update()
     {
         if (vol.weight > .15f)
         {
-            vol.weight = Mathf.Lerp(vol.weight, .15f,  Mathf.Sin(vol.weight) * Time.deltaTime * 1.5f);
+            vol.weight = Mathf.Lerp(vol.weight, .15f,  Mathf.Sin(vol.weight) * Time.deltaTime );
         }
     }
 }

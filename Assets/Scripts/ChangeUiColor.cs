@@ -48,7 +48,7 @@ public class ChangeUiColor : MonoBehaviour
             {
                 textObj.color = Color.Lerp(textObj.color, targetColor, Mathf.Cos(speed)* Time.deltaTime);
                 speed += .005f;
-                speed = Mathf.Clamp(speed, 0, .8f);
+                speed = Mathf.Clamp(speed, 0, .4f);
             }
         }
         else if (thisObj == uiObj.Image)
@@ -57,7 +57,7 @@ public class ChangeUiColor : MonoBehaviour
             {
                 _image.color = Color.Lerp(_image.color, targetColor, Mathf.Cos(speed)*Time.deltaTime);
                 speed += .005f;
-                speed = Mathf.Clamp(speed, 0, .8f);
+                speed = Mathf.Clamp(speed, 0, .4f);
             }
         }
 
