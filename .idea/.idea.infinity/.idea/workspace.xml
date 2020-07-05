@@ -56,7 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Light.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
@@ -74,6 +73,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
       </list>
     </option>
   </component>
@@ -137,7 +137,7 @@
       <workItem from="1593793741209" duration="337000" />
       <workItem from="1593820318124" duration="3658000" />
       <workItem from="1593877100651" duration="1397000" />
-      <workItem from="1593964486553" duration="865000" />
+      <workItem from="1593964486553" duration="1658000" />
     </task>
     <servers />
   </component>

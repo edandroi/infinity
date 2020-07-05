@@ -45,11 +45,20 @@ public class CircleManager : MonoBehaviour
             }
 
             var newCircle = Instantiate(circleObj, new Vector3(0, 0, 0), Quaternion.identity);
-            Color _Color = new Color(
-                Random.Range(0f, 1f), 
-                Random.Range(0f, 1f), 
-                Random.Range(0f, 1f)
-            );
+//            Color _Color = new Color(
+//                Random.Range(0f, 1f), 
+//                Random.Range(0f, 1f), 
+//                Random.Range(0f, 1f)
+//            );
+
+            Color32 _Color = new Color32(
+                
+                    ( byte )Random.Range( 0, 255 ),        // R
+                    ( byte )Random.Range( 0, 0 ),        // G
+                    ( byte )Random.Range( 0, 255 ),        // B
+                    ( byte ) 255      // A
+                
+                );
             newCircle.GetComponent<SpriteRenderer>().color = _Color;
             circles.Add(newCircle);
             newCircle.transform.parent = gameObject.transform;
