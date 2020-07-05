@@ -20,13 +20,16 @@ public class Covid : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
-        int numOfColumn = (int)(screenSize.x*2 / _spriteRenderer.bounds.max.x);
-        int numOfRow = (int)(screenSize.y*2 / _spriteRenderer.bounds.max.y);
+        int numOfColumn = (int)(screenSize.y*2 / _spriteRenderer.bounds.max.x);
+        int numOfRow = (int)(screenSize.x*2 / _spriteRenderer.bounds.max.y);
 
+        Debug.Log("screensize x is "+ screenSize.x*2);
+        Debug.Log(numOfRow);
+        
         float yPos = screenSize.y;
         float xPos = screenSize.x;
         
-        for (int c = 0; c <= Mathf.Abs(numOfColumn); c++)
+        for (int c = 0; c <= Mathf.Abs(numOfColumn)+1; c++)
         {
             // shift every 2 rows
             float thisRow = c % 2;
@@ -39,7 +42,7 @@ public class Covid : MonoBehaviour
                 xPos = screenSize.x + 1.5f;
             }
             
-            for (int i = 0; i < numOfRow; i++)
+            for (int i = 0; i < Mathf.Abs(numOfRow); i++)
             {
                 GameObject newCovid = Instantiate(covidObj);
 
