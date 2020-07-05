@@ -53,9 +53,9 @@ public class CircleManager : MonoBehaviour
 
             Color32 _Color = new Color32(
                 
-                    ( byte )Random.Range( 0, 255 ),        // R
+                    ( byte )Random.Range( 50, 255 ),        // R
                     ( byte )Random.Range( 0, 0 ),        // G
-                    ( byte )Random.Range( 0, 255 ),        // B
+                    ( byte )Random.Range( 50, 255 ),        // B
                     ( byte ) 255      // A
                 
                 );
