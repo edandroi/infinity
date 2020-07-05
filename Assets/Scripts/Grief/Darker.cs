@@ -28,20 +28,19 @@ public class Darker : MonoBehaviour
         
         _skyManager = FindObjectOfType<SkyManager>();
         numOfStars = _skyManager.numOfTotalStars;
-    }
-    
-    void Update()
-    {
-        Debug.Log(time);
+        
+        Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        transform.localScale = Vector3.one * screenSize.y * .25f;
+        transform.position = new Vector3(0, -screenSize.y + _renderer.sprite.bounds.max.y * 2f, 0 );
+        
     }
 
-    private float multiplier = 1.5f;
+    public float multiplier;
     void GetDarker()
     {
         if (_renderer.color != targetColor)
         {
-            _renderer.color = Color.Lerp(_renderer.color, targetColor, time*multiplier);
-            multiplier += .1f;
+            _renderer.color = Color.Lerp(_renderer.color, targetColor, time);
         }
     }
 

@@ -17,37 +17,11 @@ public class Covid : MonoBehaviour
     public int numOfTargetInteraction = 8;
     void Start()
     {
-//        var initialCovid = Instantiate(covidObj, Vector3.zero, Quaternion.identity);
-//        covidPre = initialCovid.transform;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
 
         int numOfColumn = (int)(screenSize.x*2 / _spriteRenderer.bounds.max.x);
         int numOfRow = (int)(screenSize.y*2 / _spriteRenderer.bounds.max.y);
-        
-        /*
-        Debug.Log(_spriteRenderer.bounds.max.y);
-        Debug.Log(_spriteRenderer.bounds.max.x);
-        Debug.Log("rows"+numOfRow);
-        Debug.Log("cols"+numOfColumn);
-        */
-        
-        /*
-        for (int i = 0; i < numOfRow; i++)
-        {
-            GameObject newCovid = Instantiate(covidObj);
-
-            if (i == 0)
-            {
-                newCovid.transform.position = new Vector3(-screenSize.x, screenSize.y,0);
-                Debug.Log(-screenSize.x);
-            }
-            else if (i>0)
-            {
-                newCovid.transform.position = new Vector3(-screenSize.x + _spriteRenderer.bounds.size.x*i*multiplier, screenSize.y, 0);
-            }
-        }
-        */
 
         float yPos = screenSize.y;
         float xPos = screenSize.x;
@@ -72,8 +46,6 @@ public class Covid : MonoBehaviour
                 if (i == 0)
                 {
                     newCovid.transform.position = new Vector3(-xPos, yPos,0);
-                    Debug.Log(newCovid.transform.position);
-                    Debug.Log(-screenSize.x);
                 }
                 else if (i>0)
                 {
@@ -86,16 +58,16 @@ public class Covid : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (touchedObj == numOfTargetInteraction)
         {
-            Debug.Log("this is true");
             Services.GameManager.nextScene = true;
         }
     }
 
+    // count the num of interactions
     public void Touched()
     {
         touchedObj++;

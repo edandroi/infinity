@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class ShapeBehaviour : MonoBehaviour
 {
@@ -46,6 +49,12 @@ public class ShapeBehaviour : MonoBehaviour
             }
 
             StartCoroutine(ChangeDrag(.3f)); 
+        }
+        else
+        {
+            Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+            transform.localScale = Vector3.one * screenSize.x * .25f;
+            transform.position = Vector3.zero;
         }
         
         _shapeManager.AddShape(gameObject);
