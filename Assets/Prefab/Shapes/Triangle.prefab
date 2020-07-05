@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5944659814151970412}
   - component: {fileID: 3148951063727911741}
-  - component: {fileID: 3396651770269572479}
   - component: {fileID: 4687833838548243918}
   - component: {fileID: 5632159329535294866}
+  - component: {fileID: 377855494457028140}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 45bb9cec028a947fbbe164aace19dc45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54b0fb542659046b3921bce80fdae3f3, type: 3}
   m_Color: {r: 0.6221989, g: 0.8679245, b: 0.09416164, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,34 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &3396651770269572479
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3371527936469635951}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.4330127, y: -0.25000003}
-      - {x: 0.43301272, y: -0.24999996}
 --- !u!50 &4687833838548243918
 Rigidbody2D:
   serializedVersion: 4
@@ -150,3 +122,62 @@ MonoBehaviour:
   triangle: {fileID: 3371527936469635951}
   hexagon: {fileID: 3321387291508525214, guid: cbbfd5c3a2e2b4bf8bf486b36161a1cd, type: 3}
   initial: no
+--- !u!60 &377855494457028140
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3371527936469635951}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.12, y: -1}
+      - {x: 0.93347293, y: -0.81652683}
+      - {x: 0.85653114, y: -0.49081162}
+      - {x: 0.77, y: -0.37468618}
+      - {x: 0.5934688, y: 0.0122510865}
+      - {x: 0.46040592, y: 0.27878243}
+      - {x: 0.31, y: 0.47878245}
+      - {x: 0.22, y: 0.6287824}
+      - {x: 0.17306261, y: 0.75265676}
+      - {x: 0.023062915, y: 0.9857196}
+      - {x: 0.04040593, y: 1.0799999}
+      - {x: 0.012886122, y: 0.94518995}
+      - {x: -0.027113877, y: 0.9190381}
+      - {x: -0.1480762, y: 0.676152}
+      - {x: -0.40085265, y: 0.28609812}
+      - {x: -0.40170527, y: 0.24981892}
+      - {x: -0.6008529, y: -0.15847549}
+      - {x: -0.6178037, y: -0.14932822}
+      - {x: -0.81695104, y: -0.50762266}
+      - {x: -0.8208529, y: -0.5898604}
+      - {x: -1.0234729, y: -0.9123153}
+      - {x: -1.12, y: -1.01}
+      - {x: -1.09, y: -1.05}
+      - {x: -1.0938481, y: -1.018076}
+      - {x: -0.77288616, y: -1.0280759}
+      - {x: -0.41962087, y: -1.0071138}
+      - {x: -0.18903856, y: -1.008076}
+      - {x: -0.020962358, y: -0.97615194}
+      - {x: 0.27481002, y: -1.0380759}
+      - {x: 0.74346846, y: -1.0590379}
+      - {x: 0.79577136, y: -1.09}
+      - {x: 1.09, y: -1.09}
+      - {x: 1.1440433, y: -1.039038}
+      - {x: 1.12, y: -1.03}

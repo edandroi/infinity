@@ -36,6 +36,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpriteAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeUiColor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -48,11 +49,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrawShapes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
@@ -61,7 +59,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
@@ -72,6 +69,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeUiColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
       </list>
     </option>
   </component>
@@ -134,6 +136,8 @@
       <workItem from="1593659464908" duration="436000" />
       <workItem from="1593793741209" duration="337000" />
       <workItem from="1593820318124" duration="3658000" />
+      <workItem from="1593877100651" duration="1397000" />
+      <workItem from="1593964486553" duration="865000" />
     </task>
     <servers />
   </component>

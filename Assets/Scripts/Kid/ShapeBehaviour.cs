@@ -11,6 +11,8 @@ public class ShapeBehaviour : MonoBehaviour
     public GameObject triangle;
     public GameObject hexagon;
 
+    public GameObject[] shapes;
+
     public string initial = "no";
 
     private ShapeManager _shapeManager;
@@ -66,12 +68,7 @@ public class ShapeBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-//            GenerateShapes();
             generate = true;
-        }
-        else
-        {
-            Debug.Log("we touch each other");
         }
     }
 
@@ -83,32 +80,11 @@ public class ShapeBehaviour : MonoBehaviour
 
         if (remainingTime <= 0)
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
-                int num = Random.Range(0, 5);
-            
-
-                switch (num)
-                {
-                    case 0:
-                        var Shape1 = Instantiate(square, transform.position, Quaternion.identity);
-                        Shape1.transform.localScale = transform.localScale * .9f;
-                        break;
-                    case 1:
-                        var Shape2 = Instantiate(triangle, transform.position, Quaternion.identity);
-                        Shape2.transform.localScale = transform.localScale * .9f;
-                        break;
-                    case 2:
-                        var Shape3 = Instantiate(hexagon, transform.position, Quaternion.identity);
-                        Shape3.transform.localScale = transform.localScale * .9f;
-                        break;
-                    case 3:
-                        var Shape4 = Instantiate(polygon, transform.position, Quaternion.identity);
-                        Shape4.transform.localScale = transform.localScale * .9f;
-                        break;
-                }
-
+                _shapeManager.GenerateShapes(gameObject);
             }
+            
             _shapeManager.RemoveShape(gameObject);
             Destroy(gameObject);
         }

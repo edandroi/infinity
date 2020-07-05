@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7834552956809542440}
   - component: {fileID: 4402594433661443914}
-  - component: {fileID: 2304020470994958725}
   - component: {fileID: 3805254190956824986}
   - component: {fileID: -1753853468471370368}
+  - component: {fileID: 2363600393075097934}
   m_Layer: 0
   m_Name: Hexagon
   m_TagString: Untagged
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 70d68cf14a0694af697c39692115d0e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebfb69e7a69494ff7b4b4e3fbf0db622, type: 3}
   m_Color: {r: 0.050980367, g: 0.83137256, b: 0.5647735, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,37 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2304020470994958725
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3321387291508525214}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.43301272, y: 0.24999999}
-      - {x: -0.4330127, y: -0.25000003}
-      - {x: 0.00000004371139, y: -0.5}
-      - {x: 0.43301272, y: -0.24999996}
-      - {x: 0.43301272, y: 0.24999996}
 --- !u!50 &3805254190956824986
 Rigidbody2D:
   serializedVersion: 4
@@ -154,3 +123,19 @@ MonoBehaviour:
     type: 3}
   hexagon: {fileID: 3321387291508525214}
   initial: no
+--- !u!58 &2363600393075097934
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3321387291508525214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.064251
