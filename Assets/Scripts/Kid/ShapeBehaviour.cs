@@ -52,9 +52,12 @@ public class ShapeBehaviour : MonoBehaviour
         }
         else
         {
-            Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
-            transform.localScale = Vector3.one * screenSize.x * .25f;
-            transform.position = Vector3.zero;
+            Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height -.5f, 0));
+            if (screenSize.y > screenSize.x)
+            {
+                transform.localScale = Vector3.one * screenSize.x * .35f;
+                transform.position = Vector3.zero;
+            }
         }
         
         _shapeManager.AddShape(gameObject);

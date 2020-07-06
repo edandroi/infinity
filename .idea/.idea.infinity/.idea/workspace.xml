@@ -69,11 +69,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -140,7 +140,7 @@
       <workItem from="1593964486553" duration="1740000" />
       <workItem from="1593972511609" duration="2000" />
       <workItem from="1593972534596" duration="4478000" />
-      <workItem from="1594075414395" duration="472000" />
+      <workItem from="1594075414395" duration="1018000" />
     </task>
     <servers />
   </component>
