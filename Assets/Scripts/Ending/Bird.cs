@@ -6,9 +6,19 @@ using UnityEngine;
 public class Bird : MonoBehaviour
 {
     private Animator _animator;
+    private SpriteRenderer _renderer;
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _renderer = GetComponent<SpriteRenderer>();
+        
+        Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+
+        if (screenSize.x < screenSize.y)
+        {
+            transform.localScale = Vector3.one * screenSize.x / screenSize.y * .4f;
+            transform.position = new Vector3(- screenSize.x + _renderer.sprite.bounds.extents.x * .3f, -screenSize.y+  _renderer.sprite.bounds.extents.y * .5f, 0);
+        }
     }
     
     void Update()

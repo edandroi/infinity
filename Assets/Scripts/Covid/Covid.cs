@@ -23,9 +23,6 @@ public class Covid : MonoBehaviour
         int numOfColumn = (int)(screenSize.y*2 / _spriteRenderer.bounds.max.x);
         int numOfRow = (int)(screenSize.x*2 / _spriteRenderer.bounds.max.y);
 
-        Debug.Log("screensize x is "+ screenSize.x*2);
-        Debug.Log(numOfRow);
-        
         float yPos = screenSize.y;
         float xPos = screenSize.x;
         
