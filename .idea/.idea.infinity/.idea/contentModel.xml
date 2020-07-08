@@ -35,6 +35,9 @@
           <e p="FollowMouse.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GetUp" t="Include">
+            <e p="GetUp.cs" t="Include" />
+          </e>
           <e p="Grief" t="Include">
             <e p="Darker.cs" t="Include" />
             <e p="SkyManager.cs" t="Include" />
