@@ -34,7 +34,10 @@ public class GetUp : MonoBehaviour
     {
 //        Debug.Log(_player.transform.position.y);
         MousePos();
-        Debug.Log(currentPos);
+        if (spriteNum == sprites.Length - 1) // if we reach the final sprite
+        {
+            Services.GameManager.nextScene = true;
+        }
     }
 
     public int spriteNum = 0;
@@ -59,7 +62,7 @@ public class GetUp : MonoBehaviour
         }
         else
         {
-            StartCoroutine(MidState(1f));
+            StartCoroutine(MidState(1.5f));
         }  
         
         if (started)
@@ -78,9 +81,6 @@ public class GetUp : MonoBehaviour
             if (currentPos == movePos.bottom)
                 StartCoroutine(Starting(.5f));
         }
-
-
-      
     }
     
     IEnumerator MidState(float seconds)

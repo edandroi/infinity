@@ -419,7 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   covidObj: {fileID: 1259308434815648709, guid: bcf2c196de5ec401f9a3c155a6667507,
     type: 3}
-  numOfTargetInteraction: 20
+  numOfTargetInteraction: 10
 --- !u!4 &933968667
 Transform:
   m_ObjectHideFlags: 0

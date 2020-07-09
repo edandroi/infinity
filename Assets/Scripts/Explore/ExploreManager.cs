@@ -21,7 +21,6 @@ public class ExploreManager : MonoBehaviour
     {
         _displayText = FindObjectOfType<TextObject>();
         CreateTextArray();
-        Debug.Log(exploreItems.Length);
         remainingTime = changeTextTimer;
     }
     
