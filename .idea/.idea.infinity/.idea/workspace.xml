@@ -25,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GetUp/Trail.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppearAniUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,7 +63,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeUiColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
@@ -78,6 +78,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/Trail.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AppearAniUi.cs" />
       </list>
     </option>
   </component>
@@ -146,7 +148,8 @@
       <workItem from="1593972534596" duration="4478000" />
       <workItem from="1594075414395" duration="1456000" />
       <workItem from="1594175829481" duration="2155000" />
-      <workItem from="1594257897391" duration="1078000" />
+      <workItem from="1594257897391" duration="1591000" />
+      <workItem from="1594682771654" duration="930000" />
     </task>
     <servers />
   </component>

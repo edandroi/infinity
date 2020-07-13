@@ -26,7 +26,7 @@ public class RevealGlow : MonoBehaviour
     {
         if (vol.weight < 1f)
         {
-            vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight));
+            vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight)* 2f);
 //            speed *= .8f;
         }
     }

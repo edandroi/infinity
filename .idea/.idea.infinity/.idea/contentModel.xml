@@ -12,6 +12,7 @@
           <e p="explore.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="AppearAniUi.cs" t="Include" />
           <e p="AudioManager.cs" t="Include" />
           <e p="ButtonInfinity.cs" t="Include" />
           <e p="ChangeUiColor.cs" t="Include" />
