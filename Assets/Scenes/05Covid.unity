@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &18391440 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7444863950650429275, guid: be4dec6fccebb47feaa4d945408688c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 363966929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &50328161
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933968667}
   - component: {fileID: 933968666}
+  - component: {fileID: 933968669}
   - component: {fileID: 933968668}
   m_Layer: 0
   m_Name: CovidManager
@@ -434,7 +441,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &933968668
+--- !u!114 &933968668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933968665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eecde6a2590a4e729142441cd302371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 18391440}
+  shakeDurationTotal: 0.1
+  shakeAmount: 0.2
+  decreaseFactor: 0.2
+--- !u!212 &933968669
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

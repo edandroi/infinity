@@ -10,6 +10,8 @@ public class CircleManager : MonoBehaviour
     private List<GameObject> circles;
 
     private Player _Player;
+
+    public int maxCircles = 30;
     void Start()
     {
         circles = new List<GameObject>();
@@ -23,7 +25,7 @@ public class CircleManager : MonoBehaviour
             GenerateCircle();
         }
 
-        if (circles.Count >= 30)
+        if (circles.Count >= maxCircles)
         {
             GameManager.instance.nextScene = true;
         }
@@ -39,17 +41,11 @@ public class CircleManager : MonoBehaviour
         {
             for (int i = 0; i < circles.Count; i++)
             {
-//                circles[i].transform.position += new Vector3(0, 0, -.1f);
                 circles[i].GetComponent<SpriteRenderer>().sortingOrder -= 1;
                 circles[i].transform.localScale *= Random.Range(1.1f , 1.5f);
             }
 
             var newCircle = Instantiate(circleObj, new Vector3(0, 0, 0), Quaternion.identity);
-//            Color _Color = new Color(
-//                Random.Range(0f, 1f), 
-//                Random.Range(0f, 1f), 
-//                Random.Range(0f, 1f)
-//            );
 
             Color32 _Color = new Color32(
                 

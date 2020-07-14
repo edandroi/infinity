@@ -70,6 +70,7 @@ public class Covid : MonoBehaviour
     // count the num of interactions
     public void Touched()
     {
+        CamShake.shakingNow = true;
         touchedObj++;
     }
 }

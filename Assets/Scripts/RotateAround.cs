@@ -14,10 +14,18 @@ public class RotateAround : MonoBehaviour
         rotationsSpeed = Random.Range(1.5f, 2.5f);
     }
 
+    float multiplier = 1;
+    public bool faster = false;
     void Update()
     {
+        if (faster)
+        {
+            Debug.Log("faster now");
+            multiplier = 90f;
+            faster = false;
+        }
         
-        float rotation=rotationsSpeed*Time.deltaTime;
+        float rotation=rotationsSpeed*Time.deltaTime * multiplier;
         if (rotationLeft > rotation)
         {
             rotationLeft-=rotation;
@@ -28,7 +36,11 @@ public class RotateAround : MonoBehaviour
             rotationLeft=0;
         }
         transform.Rotate(0,0,rotation);
+
+        if (multiplier > 1)
+        {
+            multiplier -= .5f;
+        }
     }
-        
 }
 

@@ -20,6 +20,7 @@
             <e p="CircleManager.cs" t="Include" />
           </e>
           <e p="Covid" t="Include">
+            <e p="CamShake.cs" t="Include" />
             <e p="Covid.cs" t="Include" />
             <e p="CovidObj.cs" t="Include" />
           </e>

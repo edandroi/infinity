@@ -44,15 +44,21 @@ public class StarFall : MonoBehaviour
     {
         if (!touched)
         {
+            if (other.gameObject.name == "NoZone")
+            {
+                Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+                Vector3 spawnPos = new Vector3(Random.Range(-screenSize.x, screenSize.x) * .9f,
+                    Random.Range(-screenSize.y * .7f, screenSize.y) * .9f, 0);
+                transform.position = spawnPos;
+            }
             // drop stars as you touch them
             if (other.gameObject.CompareTag("Player"))
             {
                 rb.gravityScale = 1;
                 _darker.darker_Event.Invoke();
                 _skyManager.FallenStars(gameObject);
+                touched = true;
             }
-
-            touched = true;
         }
 
     }
