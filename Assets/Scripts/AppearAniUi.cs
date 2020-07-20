@@ -35,13 +35,16 @@ public class AppearAniUi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (uiType == 0)
+        if (Services.GameManager.introDone)
         {
-            AppearText();
-        }
-        else if (uiType == 1)
-        {
-            AppearImage();
+            if (uiType == 0)
+            {
+                AppearText();
+            }
+            else if (uiType == 1)
+            {
+                AppearImage();
+            }
         }
     }
     
@@ -49,7 +52,7 @@ public class AppearAniUi : MonoBehaviour
     {
         if (textObj.color.a < 252)
         {
-            textObj.color = new Color(1, 1, 1, Mathf.Lerp(textObj.color.a, 1, .1f * Time.deltaTime));
+            textObj.color = new Color(1, 1, 1, Mathf.Lerp(textObj.color.a, 1, .4f * Time.deltaTime));
         }
     }
     
@@ -57,7 +60,7 @@ public class AppearAniUi : MonoBehaviour
     {
         if (imageObj.color.a < 252)
         {
-            imageObj.color = new Color(1, 1, 1, Mathf.Lerp(imageObj.color.a, 1, .1f * Time.deltaTime));
+            imageObj.color = new Color(1, 1, 1, Mathf.Lerp(imageObj.color.a, 1, .4f * Time.deltaTime));
         }
     }
 }

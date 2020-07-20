@@ -46,6 +46,10 @@
             <e p="SkyManager.cs" t="Include" />
             <e p="StarFall.cs" t="Include" />
           </e>
+          <e p="Intro" t="Include">
+            <e p="IntroSequence.cs" t="Include" />
+            <e p="ZweigImage.cs" t="Include" />
+          </e>
           <e p="Kid" t="Include">
             <e p="DrawShapes.cs" t="Include" />
             <e p="ShapeBehaviour.cs" t="Include" />

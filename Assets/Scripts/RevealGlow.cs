@@ -24,10 +24,13 @@ public class RevealGlow : MonoBehaviour
     private float speed = 4f;
     void Update()
     {
-        if (vol.weight < 1f)
+        if (Services.GameManager.introDone)
         {
-            vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight)* 2f);
+            if (vol.weight < 1f)
+            {
+                vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight)* 2f);
 //            speed *= .8f;
+            }
         }
     }
 }

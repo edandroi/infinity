@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
     public bool nextScene = false;
     
     public static GameManager instance;
+
+    public bool introDone = false;
     void Awake()
     {
         if (instance == null)
@@ -23,7 +25,6 @@ public class GameManager : MonoBehaviour
     {
         if (nextScene)
         {
-//            Debug.Log("next scene called now");
             StartCoroutine(NextScene(2.4f));
         }
     }
