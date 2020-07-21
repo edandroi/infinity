@@ -83,12 +83,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AppearAniUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
       </list>
     </option>
   </component>
@@ -161,6 +161,8 @@
       <workItem from="1594682771654" duration="4219000" />
       <workItem from="1595090113423" duration="1222000" />
       <workItem from="1595175142224" duration="7035000" />
+      <workItem from="1595275291766" duration="560000" />
+      <workItem from="1595335748222" duration="1258000" />
     </task>
     <servers />
   </component>
@@ -194,29 +196,42 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs</url>
-          <line>41</line>
+          <line>49</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" initialLine="46">
             <startOffsets>
-              <option value="858" />
+              <option value="1166" />
             </startOffsets>
             <endOffsets>
-              <option value="894" />
+              <option value="1203" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs</url>
-          <line>81</line>
+          <line>87</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs" initialLine="81">
             <startOffsets>
-              <option value="1843" />
+              <option value="2016" />
             </startOffsets>
             <endOffsets>
-              <option value="1881" />
+              <option value="2054" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs" initialLine="19">
+            <startOffsets>
+              <option value="359" />
+            </startOffsets>
+            <endOffsets>
+              <option value="384" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

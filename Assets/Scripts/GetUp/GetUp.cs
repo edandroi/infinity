@@ -2,8 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Timers;
-using UnityEditor.SceneManagement;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GetUp : MonoBehaviour
 {
@@ -15,6 +15,8 @@ public class GetUp : MonoBehaviour
     private Player _player;
 
     private Vector3 screenSize;
+
+    private bool mobile = false;
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
@@ -23,6 +25,14 @@ public class GetUp : MonoBehaviour
         col = GetComponent<Collider2D>();
         
         screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+
+        // mobil render icin poziyonu degistiricem
+        if (Screen.height > Screen.width)
+        {
+            mobile = true;
+            transform.position = new Vector3(screenSize.x/2, -screenSize.y + _spriteRenderer.bounds.size.y/2, 0 );
+            transform.localScale *= .7f;
+        }
     }
 
     enum movePos
@@ -37,9 +47,7 @@ public class GetUp : MonoBehaviour
 
     void Update()
     {
-//        MousePos();
-
-        if (spriteNum == sprites.Length - 1) // if we reach the final sprite
+        if (spriteNum == sprites.Length - 1 ) // if we reach the final sprite
         {
             Services.GameManager.nextScene = true;
         }
@@ -55,12 +63,24 @@ public class GetUp : MonoBehaviour
         _spriteRenderer.sprite = sprites[spriteNum];
     }
 
+    public void MoveXPos()
+    {
+        Vector3 newPos = new Vector3(Random.Range(-transform.position.x - 1f, -transform.position.x + 1f), transform.position.y, 0);
+        transform.position = newPos;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("now");
         if (other.gameObject.CompareTag("Player"))
-        ChangeSprite();
+        {
+            if (spriteNum < sprites.Length)
+            {
+                ChangeSprite();
+                MoveXPos();   
+            }
+        }
     }
 
 

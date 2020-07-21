@@ -13,7 +13,7 @@ public class ZweigImage : MonoBehaviour
         imageObj = GetComponent<Image>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (zweigDisappear)
         {

@@ -67,25 +67,31 @@ public class IntroSequence : MonoBehaviour
     {
         if (disappear)
         {
-            if (textObj.color.a > 0.1)
+            if (textObj.color.a > 0)
             {
                 if (textNow == introText.Length)
                 {
                     zweigs.zweigDisappear = true;
                 }
                 textObj.color = new Color(1, 1, 1, Mathf.Lerp(textObj.color.a, -1, .99f * Time.deltaTime));
+
+                if (zweigs.zweigDisappear)
+                {
+                    if (textObj.color.a < .1)
+                        Destroy(gameObject);
+                }
             }
             else
             {
-                if (textNow == introText.Length)
+                if (textNow == introText.Length - 1)
                 {
                     Services.GameManager.introDone = true;
                     return;
                 }
-                textNow++;
-                textObj.text = introText[textNow];
-                timeRemaining = timer;
-                disappear = false;
+                    textNow++;
+                    textObj.text = introText[textNow];
+                    timeRemaining = timer;
+                    disappear = false;
             }
         }
         
