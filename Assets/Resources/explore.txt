@@ -4,7 +4,7 @@ Injustice
 Friendship
 Compassion
 Anger
-OBbsession
+Obsession
 Bread
 Zoom
 Walks
@@ -12,7 +12,6 @@ Coffee
 Masks
 Survival
 Community
-Racism
 Rights
 Violence
 Plants
@@ -27,3 +26,5 @@ Sharing
 Boredom
 Literature
 Plants
+Movies
+Family

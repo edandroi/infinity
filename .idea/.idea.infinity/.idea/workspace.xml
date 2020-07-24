@@ -69,7 +69,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeUiColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" />
@@ -82,13 +81,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AppearAniUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AppearAniUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +162,9 @@
       <workItem from="1595090113423" duration="1222000" />
       <workItem from="1595175142224" duration="7035000" />
       <workItem from="1595275291766" duration="560000" />
-      <workItem from="1595335748222" duration="1258000" />
+      <workItem from="1595335748222" duration="2860000" />
+      <workItem from="1595444209937" duration="1162000" />
+      <workItem from="1595620660116" duration="1113000" />
     </task>
     <servers />
   </component>
@@ -209,13 +211,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs</url>
-          <line>87</line>
+          <line>90</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Intro/IntroSequence.cs" initialLine="81">
             <startOffsets>
-              <option value="2016" />
+              <option value="2129" />
             </startOffsets>
             <endOffsets>
-              <option value="2054" />
+              <option value="2167" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

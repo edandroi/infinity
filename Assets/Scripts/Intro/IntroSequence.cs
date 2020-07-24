@@ -29,7 +29,7 @@ public class IntroSequence : MonoBehaviour
         Appear();
     }
     
-    public float timer = 4f;
+    public float timer = 5f;
     private float timeRemaining;
 
     private bool moveTxt = false;
@@ -69,7 +69,7 @@ public class IntroSequence : MonoBehaviour
         {
             if (textObj.color.a > 0)
             {
-                if (textNow == introText.Length)
+                if (textNow == introText.Length - 1)
                 {
                     zweigs.zweigDisappear = true;
                 }
@@ -78,17 +78,20 @@ public class IntroSequence : MonoBehaviour
                 if (zweigs.zweigDisappear)
                 {
                     if (textObj.color.a < .1)
+                    {
+                        Services.GameManager.introDone = true;
+                        Services.AudioManager._startMusic.Invoke();
                         Destroy(gameObject);
+                    }
                 }
             }
             else
             {
                 if (textNow == introText.Length - 1)
                 {
-                    Services.GameManager.introDone = true;
                     return;
-                }
-                    textNow++;
+                } 
+                textNow++;
                     textObj.text = introText[textNow];
                     timeRemaining = timer;
                     disappear = false;

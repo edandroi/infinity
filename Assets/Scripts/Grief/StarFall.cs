@@ -46,6 +46,7 @@ public class StarFall : MonoBehaviour
         {
             if (other.gameObject.name == "NoZone")
             {
+//                Debug.Log("now change star pos");
                 Vector3 screenSize = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
                 Vector3 spawnPos = new Vector3(Random.Range(-screenSize.x, screenSize.x) * .9f,
                     Random.Range(-screenSize.y * .7f, screenSize.y) * .9f, 0);

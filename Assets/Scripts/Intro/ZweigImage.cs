@@ -19,7 +19,7 @@ public class ZweigImage : MonoBehaviour
         {
             if (imageObj.color.a > 0)
             {
-                imageObj.color = new Color(1, 1, 1, Mathf.Lerp(imageObj.color.a, 0, 1f * Time.deltaTime));
+                imageObj.color = new Color(1, 1, 1, Mathf.Lerp(imageObj.color.a, -1, 1f * Time.deltaTime));
             }
         }
     }

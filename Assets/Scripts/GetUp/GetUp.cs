@@ -59,8 +59,11 @@ public class GetUp : MonoBehaviour
     private Bounds _bounds;
     public void ChangeSprite()
     {
-        spriteNum++;
-        _spriteRenderer.sprite = sprites[spriteNum];
+        if (!Services.GameManager.nextScene)
+        {
+            spriteNum++;
+            _spriteRenderer.sprite = sprites[spriteNum];
+        }
     }
 
     public void MoveXPos()
@@ -72,7 +75,6 @@ public class GetUp : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("now");
         if (other.gameObject.CompareTag("Player"))
         {
             if (spriteNum < sprites.Length)

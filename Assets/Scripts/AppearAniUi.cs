@@ -52,7 +52,7 @@ public class AppearAniUi : MonoBehaviour
     {
         if (textObj.color.a < 252)
         {
-            textObj.color = new Color(1, 1, 1, Mathf.Lerp(textObj.color.a, 1, .4f * Time.deltaTime));
+            textObj.color = new Color(1, 1, 1, Mathf.Lerp(textObj.color.a, 1, .8f * Time.deltaTime));
         }
     }
     
@@ -60,7 +60,7 @@ public class AppearAniUi : MonoBehaviour
     {
         if (imageObj.color.a < 252)
         {
-            imageObj.color = new Color(1, 1, 1, Mathf.Lerp(imageObj.color.a, 1, .4f * Time.deltaTime));
+            imageObj.color = new Color(1, 1, 1, Mathf.Lerp(imageObj.color.a, 1, .8f * Time.deltaTime));
         }
     }
 }

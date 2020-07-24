@@ -17,8 +17,6 @@ public class RevealGlow : MonoBehaviour
         vol = GetComponent<Volume>();
 
         vol.weight = 0f;
-
-
     }
 
     private float speed = 4f;
@@ -28,7 +26,7 @@ public class RevealGlow : MonoBehaviour
         {
             if (vol.weight < 1f)
             {
-                vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight)* 2f);
+                vol.weight = Mathf.Lerp(vol.weight, 1f,  Time.deltaTime * Mathf.Cos(vol.weight)* 10f);
 //            speed *= .8f;
             }
         }
