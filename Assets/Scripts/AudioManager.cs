@@ -13,11 +13,29 @@ public class AudioManager : MonoBehaviour
     private static AudioManager instance;
 
     public UnityEvent _startMusic;
+    
+    // play when the 01Stars scene is completed
+    public UnityEvent starsCompleted_Event;
+    private AudioClip starsCompletedSfx;
+    
+    
+    // 03Kids sfx
+    public AudioClip[] shapesSfxArray;
+    private List<AudioClip> shapesSfxList;
+    public UnityEvent shapesFx_Event;
+    
 
     // sound fx for the star fall scene
-    public AudioClip[] starFallFX;
+    public AudioClip[] starFallArray;
     private List<AudioClip> starFalls;
     public UnityEvent starFalling_Event;
+    
+    //sound fx for virus scene
+    public UnityEvent covid_Event;
+    private AudioClip covidSfx1;
+    private AudioClip covidSfx2;
+    
+    
     private void Awake()
     {
         if (instance == null)
@@ -45,13 +63,33 @@ public class AudioManager : MonoBehaviour
         // for the bg music to start later
         _startMusic.AddListener(startMusic);
 
-        starFalls = new List<AudioClip>();
-        for (int i = 0; i < starFallFX.Length; i++)
-        {
-            starFalls.Add(starFallFX[i]);
-        }
         
+        //01Stars scene sfx
+        starsCompletedSfx = covidSfx1 = Resources.Load<AudioClip>("Sounds/zil2");
+        starsCompleted_Event.AddListener(starsCompletedFX);
+        
+        
+        // 03Kids scene sfx
+        shapesSfxList = new List<AudioClip>();
+        for (int i = 0; i < shapesSfxArray.Length; i++)
+        {
+            shapesSfxList.Add(shapesSfxArray[i]);
+        }
+        shapesFx_Event.AddListener(shapesSfx);
+        
+        // 04Grief scene sound fx
+        starFalls = new List<AudioClip>();
+        for (int i = 0; i < starFallArray.Length; i++)
+        {
+            starFalls.Add(starFallArray[i]);
+        }
         starFalling_Event.AddListener(starsFallingFX);
+        
+        //05Covid scene sound effects
+        covidSfx1 = Resources.Load<AudioClip>("Sounds/timpaniLow");
+//        covidSfx2 = Resources.Load<AudioClip>("Sounds/timpaniRoll");
+        covid_Event.AddListener(covidFX);
+        
     }
     
     void Update()
@@ -69,6 +107,14 @@ public class AudioManager : MonoBehaviour
             }
         }
 
+        // if we are on a scene and there is no music on the bg
+        if (!isPlaying)
+        {
+            if (SceneManager.GetActiveScene().name != "00Title")
+            {
+                _startMusic.Invoke();
+            }
+        }
     }
     
     void startMusic()
@@ -78,22 +124,52 @@ public class AudioManager : MonoBehaviour
         turnOnVol = true;
     }
 
-    
+    void shapesSfx()
+    {
+        if (shapesSfxList.Count == 0)
+        {
+            // if our list is empty, we add the same sounds again and use
+            for (int s = 0; s < shapesSfxArray.Length; s++)
+            {
+                shapesSfxList.Add(shapesSfxArray[s]);
+            }
+        }
+
+        int i = Random.Range(0, shapesSfxList.Count);
+        _effects.volume = .6f;
+        _effects.pitch = Random.Range(.8f, 1f);
+        _effects.PlayOneShot(shapesSfxList[i]);
+        shapesSfxList.Remove(shapesSfxList[i]);
+    }
+
+    void covidFX()
+    {
+        _effects.volume = .9f;
+        _effects.pitch = Random.Range(.82f, .92f);
+        _effects.PlayOneShot(covidSfx1);
+    }
+
     // for 04Grief scene, fx when stars are falling
     void starsFallingFX()
     {
         if (starFalls.Count == 0)
         {
             // if our list is empty, we add the same sounds again and use
-            for (int s = 0; s < starFallFX.Length; s++)
+            for (int s = 0; s < starFallArray.Length; s++)
             {
-                starFalls.Add(starFallFX[s]);
+                starFalls.Add(starFallArray[s]);
             }
         }
 
         int i = Random.Range(0, starFalls.Count);
-        _effects.volume = .7f;
+        _effects.volume = .4f;
         _effects.PlayOneShot(starFalls[i]);
         starFalls.Remove(starFalls[i]);
+    }
+
+    void starsCompletedFX()
+    {
+        _effects.volume = .5f;
+        _effects.PlayOneShot(starsCompletedSfx);
     }
 }

@@ -13,13 +13,19 @@ public class StarManager : MonoBehaviour
     void Start()
     {
         GenerateStars();
-//        Debug.Log("num of stars total "+numOfTotalStars);
     }
-    
+
+    private bool finalStar = false;
     void Update()
     {
         if (starsFound >= numOfTotalStars)
         {
+            if (!finalStar)
+            {
+                Services.AudioManager.starsCompleted_Event.Invoke();
+                finalStar = true;
+            }
+
             Services.GameManager.nextScene = true;
         }
     }

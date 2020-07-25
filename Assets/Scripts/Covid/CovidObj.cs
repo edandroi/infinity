@@ -18,6 +18,7 @@ public class CovidObj : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _covidManager.Touched();
+            Services.AudioManager.covid_Event.Invoke();
             _rotate.faster = true;
         }
     }

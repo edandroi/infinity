@@ -98,6 +98,7 @@ public class ShapeBehaviour : MonoBehaviour
             }
             
             _shapeManager.RemoveShape(gameObject);
+            Services.AudioManager.shapesFx_Event.Invoke();
             Destroy(gameObject);
         }
     }

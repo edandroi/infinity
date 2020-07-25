@@ -46,7 +46,18 @@ MonoBehaviour:
   _startMusic:
     m_PersistentCalls:
       m_Calls: []
-  starFallFX:
+  starsCompleted_Event:
+    m_PersistentCalls:
+      m_Calls: []
+  shapesSfxArray:
+  - {fileID: 8300000, guid: 817a4ea70d408479b89a89c863281176, type: 3}
+  - {fileID: 8300000, guid: dc857a287ddf44ae89ec369af160a3f8, type: 3}
+  - {fileID: 8300000, guid: 9c702db85986a4eeda9532307dfd401a, type: 3}
+  - {fileID: 8300000, guid: 2137bfa10731340d68c2c1baf8db40fd, type: 3}
+  shapesFx_Event:
+    m_PersistentCalls:
+      m_Calls: []
+  starFallArray:
   - {fileID: 8300000, guid: f647ec998ceeb400da904c930ddfc570, type: 3}
   - {fileID: 8300000, guid: d393787f52c284fb1905f43a720b0589, type: 3}
   - {fileID: 8300000, guid: a1b27ad73c90a436c9e5c52906e0cde0, type: 3}
@@ -56,6 +67,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b1aca99dc83444f71b7b0c713cb5b044, type: 3}
   - {fileID: 8300000, guid: 8c50dd7496f2c4ad88fe74aefb2ba5aa, type: 3}
   starFalling_Event:
+    m_PersistentCalls:
+      m_Calls: []
+  covid_Event:
     m_PersistentCalls:
       m_Calls: []
   isPlaying: 0
