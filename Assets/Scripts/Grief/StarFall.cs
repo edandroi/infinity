@@ -58,6 +58,7 @@ public class StarFall : MonoBehaviour
                 rb.gravityScale = 1;
                 _darker.darker_Event.Invoke();
                 _skyManager.FallenStars(gameObject);
+                Services.AudioManager.starFalling_Event.Invoke();
                 touched = true;
             }
         }

@@ -6,6 +6,7 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AudioEffects.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="explore copy.txt" t="Include" />
           <e p="explore.txt" t="Include" />
