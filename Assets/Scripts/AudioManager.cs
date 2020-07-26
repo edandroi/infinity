@@ -17,6 +17,9 @@ public class AudioManager : MonoBehaviour
     // play when the 01Stars scene is completed
     public UnityEvent starsCompleted_Event;
     private AudioClip starsCompletedSfx;
+    public AudioClip[] starRevealArray;
+    private List<AudioClip> starsRevealList;
+    public UnityEvent starReveal_Event;
     
     //02Pi
     public UnityEvent circles_Event;
@@ -28,10 +31,9 @@ public class AudioManager : MonoBehaviour
     public UnityEvent shapesFx_Event;
     
 
-    // sound fx for the star fall scene
-    public AudioClip[] starFallArray;
-    private List<AudioClip> starFalls;
-    public UnityEvent starFalling_Event;
+    // 04Grief
+    public UnityEvent starFall_Event;
+    private AudioClip starFallSfx;
     
     //sound fx for virus scene
     public UnityEvent covid_Event;
@@ -72,6 +74,13 @@ public class AudioManager : MonoBehaviour
         //01Stars scene sfx
         starsCompletedSfx = Resources.Load<AudioClip>("Sounds/zil2");
         starsCompleted_Event.AddListener(starsCompletedFX);
+        
+        starsRevealList = new List<AudioClip>();
+        for (int i = 0; i < starRevealArray.Length; i++)
+        {
+            starsRevealList.Add(starRevealArray[i]);
+        }
+        starReveal_Event.AddListener(starsReveal);
 
         //02Pi scene sfx
         circlesSfx = Resources.Load<AudioClip>("Sounds/pop");
@@ -86,12 +95,7 @@ public class AudioManager : MonoBehaviour
         shapesFx_Event.AddListener(shapesSfx);
         
         // 04Grief scene sound fx
-        starFalls = new List<AudioClip>();
-        for (int i = 0; i < starFallArray.Length; i++)
-        {
-            starFalls.Add(starFallArray[i]);
-        }
-        starFalling_Event.AddListener(starsFallingFX);
+        starFallSfx = Resources.Load<AudioClip>("Sounds/pop2");
         
         //05Covid scene sound effects
         covidSfx1 = Resources.Load<AudioClip>("Sounds/timpaniLow");
@@ -181,21 +185,28 @@ public class AudioManager : MonoBehaviour
     }
 
     // for 04Grief scene, fx when stars are falling
-    public void starsFallingFX()
+    public void starsReveal()
     {
-        if (starFalls.Count == 0)
+        if (starsRevealList.Count == 0)
         {
             // if our list is empty, we add the same sounds again and use
-            for (int s = 0; s < starFallArray.Length; s++)
+            for (int s = 0; s < starRevealArray.Length; s++)
             {
-                starFalls.Add(starFallArray[s]);
+                starsRevealList.Add(starRevealArray[s]);
             }
         }
 
-        int i = Random.Range(0, starFalls.Count);
+        int i = Random.Range(0, starsRevealList.Count);
         _effects.volume = .4f;
-        _effects.PlayOneShot(starFalls[i]);
-        starFalls.Remove(starFalls[i]);
+        _effects.PlayOneShot(starsRevealList[i]);
+        starsRevealList.Remove(starsRevealList[i]);
+    }
+
+    public void starsFalling()
+    {
+        _effects.volume = .9f;
+        _effects.pitch = Random.Range(.85f, 1f);
+        _effects.PlayOneShot(starFallSfx);
     }
 
     public void starsCompletedFX()

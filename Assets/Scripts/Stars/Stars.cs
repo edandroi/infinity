@@ -31,6 +31,7 @@ public class Stars : MonoBehaviour
                     m_SpriteRenderer.enabled = true;
                     m_Light.enabled = true;
                     m_Manager.StarFound();
+                    Services.AudioManager.starReveal_Event.Invoke();
                     isFound = true;
             }
         }
