@@ -18,6 +18,9 @@ public class AudioManager : MonoBehaviour
     public UnityEvent starsCompleted_Event;
     private AudioClip starsCompletedSfx;
     
+    //02Pi
+    public UnityEvent circles_Event;
+    private AudioClip circlesSfx;
     
     // 03Kids sfx
     public AudioClip[] shapesSfxArray;
@@ -34,8 +37,10 @@ public class AudioManager : MonoBehaviour
     public UnityEvent covid_Event;
     private AudioClip covidSfx1;
     private AudioClip covidSfx2;
-    
-    
+
+    private AudioClip flap1;
+
+
     private void Awake()
     {
         if (instance == null)
@@ -65,9 +70,12 @@ public class AudioManager : MonoBehaviour
 
         
         //01Stars scene sfx
-        starsCompletedSfx = covidSfx1 = Resources.Load<AudioClip>("Sounds/zil2");
-        starsCompleted_Event.AddListener(starsCompletedFX);
-        
+        starsCompletedSfx = Resources.Load<AudioClip>("Sounds/zil2");
+//        starsCompleted_Event.AddListener(starsCompletedFX);
+
+        //02Pi scene sfx
+        circlesSfx = Resources.Load<AudioClip>("Sounds/pop");
+        circles_Event.AddListener(circlesFx);
         
         // 03Kids scene sfx
         shapesSfxList = new List<AudioClip>();
@@ -90,10 +98,15 @@ public class AudioManager : MonoBehaviour
 //        covidSfx2 = Resources.Load<AudioClip>("Sounds/timpaniRoll");
         covid_Event.AddListener(covidFX);
         
+        
+        //08Ending sfx
+        flap1 = covidSfx1 = Resources.Load<AudioClip>("Sounds/flap3");
+        
     }
     
     void Update()
     {
+//        Debug.Log("shpaes list "+shapesSfxList.Count);
         // turn on music at the start
         if (turnOnVol)
         {
@@ -115,16 +128,26 @@ public class AudioManager : MonoBehaviour
                 _startMusic.Invoke();
             }
         }
+
+        if (end)
+        {
+            if (_audioSource.volume > 0)
+            {
+                _audioSource.volume = Mathf.Lerp(_audioSource.volume, -.5f, .9f * Time.deltaTime);
+            }
+        }
     }
-    
+
     void startMusic()
     {
         _audioSource.Play();
         isPlaying = true;
+        _audioSource.loop = true;
         turnOnVol = true;
     }
 
-    void shapesSfx()
+    public bool reload = false;
+    public void shapesSfx()
     {
         if (shapesSfxList.Count == 0)
         {
@@ -141,8 +164,16 @@ public class AudioManager : MonoBehaviour
         _effects.PlayOneShot(shapesSfxList[i]);
         shapesSfxList.Remove(shapesSfxList[i]);
     }
+    
+    
+    public void circlesFx()
+    {
+        _effects.volume = .7f;
+        _effects.pitch = Random.Range(.6f, .9f);
+        _effects.PlayOneShot(circlesSfx);
+    }
 
-    void covidFX()
+    public void covidFX()
     {
         _effects.volume = .9f;
         _effects.pitch = Random.Range(.82f, .92f);
@@ -150,7 +181,7 @@ public class AudioManager : MonoBehaviour
     }
 
     // for 04Grief scene, fx when stars are falling
-    void starsFallingFX()
+    public void starsFallingFX()
     {
         if (starFalls.Count == 0)
         {
@@ -167,9 +198,18 @@ public class AudioManager : MonoBehaviour
         starFalls.Remove(starFalls[i]);
     }
 
-    void starsCompletedFX()
+    public void starsCompletedFX()
     {
         _effects.volume = .5f;
         _effects.PlayOneShot(starsCompletedSfx);
+        _effects.loop = true;
+    }
+
+    private bool end = false;
+    public void flapSfx()
+    {
+        end = true;
+        _effects.volume = 1f;
+        _effects.PlayOneShot(flap1);
     }
 }

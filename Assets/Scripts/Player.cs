@@ -45,8 +45,4 @@ public class Player : MonoBehaviour
         return mouseIsMoving;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-//        Debug.Log("Player collided with "+other.gameObject.name);
-    }
 }

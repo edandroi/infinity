@@ -35,6 +35,7 @@ public class Bird : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _animator.SetBool("isFlying", true);
+            Services.AudioManager.flapSfx();
         }
     }
 }

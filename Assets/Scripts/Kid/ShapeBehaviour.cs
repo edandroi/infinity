@@ -67,7 +67,12 @@ public class ShapeBehaviour : MonoBehaviour
     void Update()
     {
         if (generate)
+        {
+            Debug.Log(Services.AudioManager);
+            Debug.Log(Services.GameManager);
+            Debug.Log(Services.Player);
             GenerateShapes();
+        }
     }
     
     IEnumerator ChangeDrag(float seconds)
@@ -98,7 +103,7 @@ public class ShapeBehaviour : MonoBehaviour
             }
             
             _shapeManager.RemoveShape(gameObject);
-            Services.AudioManager.shapesFx_Event.Invoke();
+            Services.AudioManager.shapesSfx();
             Destroy(gameObject);
         }
     }

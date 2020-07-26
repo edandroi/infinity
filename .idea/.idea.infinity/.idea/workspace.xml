@@ -63,22 +63,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Light.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeUiColor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/Trail.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CamShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs" />
@@ -89,7 +83,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
@@ -167,7 +167,7 @@
       <workItem from="1595335748222" duration="2860000" />
       <workItem from="1595444209937" duration="1162000" />
       <workItem from="1595620660116" duration="1565000" />
-      <workItem from="1595687139812" duration="4385000" />
+      <workItem from="1595687139812" duration="9773000" />
     </task>
     <servers />
   </component>
@@ -240,55 +240,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>148</line>
+          <line>179</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="107">
             <startOffsets>
-              <option value="4000" />
+              <option value="4842" />
             </startOffsets>
             <endOffsets>
-              <option value="4032" />
+              <option value="4874" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>81</line>
+          <line>89</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="81">
             <startOffsets>
-              <option value="2211" />
+              <option value="2430" />
             </startOffsets>
             <endOffsets>
-              <option value="2257" />
+              <option value="2476" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>141</line>
+          <line>164</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="141">
             <startOffsets>
-              <option value="3838" />
+              <option value="4501" />
             </startOffsets>
             <endOffsets>
-              <option value="3877" />
+              <option value="4540" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>167</line>
+          <line>198</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="167">
             <startOffsets>
-              <option value="4558" />
+              <option value="5407" />
             </startOffsets>
             <endOffsets>
-              <option value="4559" />
+              <option value="5408" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
+          <line>98</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="98">
+            <startOffsets>
+              <option value="2791" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2824" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

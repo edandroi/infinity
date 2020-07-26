@@ -16,6 +16,7 @@ public class CircleManager : MonoBehaviour
     {
         circles = new List<GameObject>();
         _Player = FindObjectOfType<Player>();
+        remainingTime = timer;
     }
     
     void Update()
@@ -31,7 +32,7 @@ public class CircleManager : MonoBehaviour
         }
     }
 
-    public float timer = 100f;
+    public float timer = 0.07f;
     private float remainingTime;
     void GenerateCircle()
     {
@@ -58,6 +59,8 @@ public class CircleManager : MonoBehaviour
             newCircle.GetComponent<SpriteRenderer>().color = _Color;
             circles.Add(newCircle);
             newCircle.transform.parent = gameObject.transform;
+//            Debug.Log(Services.AudioManager.circles_Event);
+            Services.AudioManager.circlesFx();
             remainingTime = timer;
         }
     }
