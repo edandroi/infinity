@@ -71,7 +71,7 @@ public class AudioManager : MonoBehaviour
         
         //01Stars scene sfx
         starsCompletedSfx = Resources.Load<AudioClip>("Sounds/zil2");
-//        starsCompleted_Event.AddListener(starsCompletedFX);
+        starsCompleted_Event.AddListener(starsCompletedFX);
 
         //02Pi scene sfx
         circlesSfx = Resources.Load<AudioClip>("Sounds/pop");
@@ -100,7 +100,7 @@ public class AudioManager : MonoBehaviour
         
         
         //08Ending sfx
-        flap1 = covidSfx1 = Resources.Load<AudioClip>("Sounds/flap3");
+        flap1 = Resources.Load<AudioClip>("Sounds/flap3");
         
     }
     

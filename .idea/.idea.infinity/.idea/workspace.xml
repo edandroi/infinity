@@ -81,7 +81,6 @@
         <option value="$PROJECT_DIR$/Assets/AudioEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CovidObj.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/StarManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Circle/CircleManager.cs" />
@@ -91,6 +90,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
       </list>
     </option>
   </component>
@@ -167,7 +167,7 @@
       <workItem from="1595335748222" duration="2860000" />
       <workItem from="1595444209937" duration="1162000" />
       <workItem from="1595620660116" duration="1565000" />
-      <workItem from="1595687139812" duration="9773000" />
+      <workItem from="1595687139812" duration="10990000" />
     </task>
     <servers />
   </component>
@@ -243,10 +243,10 @@
           <line>179</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="107">
             <startOffsets>
-              <option value="4842" />
+              <option value="4828" />
             </startOffsets>
             <endOffsets>
-              <option value="4874" />
+              <option value="4860" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
@@ -256,10 +256,10 @@
           <line>89</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="81">
             <startOffsets>
-              <option value="2430" />
+              <option value="2428" />
             </startOffsets>
             <endOffsets>
-              <option value="2476" />
+              <option value="2474" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
@@ -269,10 +269,10 @@
           <line>164</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="141">
             <startOffsets>
-              <option value="4501" />
+              <option value="4487" />
             </startOffsets>
             <endOffsets>
-              <option value="4540" />
+              <option value="4526" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
@@ -282,10 +282,10 @@
           <line>198</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="167">
             <startOffsets>
-              <option value="5407" />
+              <option value="5393" />
             </startOffsets>
             <endOffsets>
-              <option value="5408" />
+              <option value="5394" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
@@ -295,10 +295,10 @@
           <line>98</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="98">
             <startOffsets>
-              <option value="2791" />
+              <option value="2789" />
             </startOffsets>
             <endOffsets>
-              <option value="2824" />
+              <option value="2822" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />

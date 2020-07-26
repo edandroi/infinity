@@ -11,6 +11,7 @@ public class Stars : MonoBehaviour
     private StarManager m_Manager;
 
     private bool isFound = false;
+    
     void Start()
     {
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
@@ -20,17 +21,17 @@ public class Stars : MonoBehaviour
 
         m_Manager = FindObjectOfType<StarManager>();
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (!isFound)
+            if (!isFound) 
             {
-                m_SpriteRenderer.enabled = true;
-                m_Light.enabled = true;
-                m_Manager.StarFound();
-                isFound = true;
+                    m_SpriteRenderer.enabled = true;
+                    m_Light.enabled = true;
+                    m_Manager.StarFound();
+                    isFound = true;
             }
         }
     }
