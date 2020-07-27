@@ -13,6 +13,9 @@ public class StarFall : MonoBehaviour
     private Darker _darker;
     private SkyManager _skyManager;
 
+    private AudioSource _audioSource;
+    private AudioClip fallFx;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,8 +39,17 @@ public class StarFall : MonoBehaviour
 
         // the image that gets darker as we lose stars
         _darker = FindObjectOfType<Darker>();
+
+        _audioSource = gameObject.AddComponent<AudioSource>();
+        fallFx = Resources.Load<AudioClip>("Sounds/celestial1");
     }
 
+    public void starsFalling()
+    {
+        _audioSource.volume = 1f;
+        _audioSource.pitch = Random.Range(.85f, 1f);
+        _audioSource.PlayOneShot(fallFx);
+    }
 
     private bool touched = false;
     private void OnTriggerEnter2D(Collider2D other)
@@ -58,7 +70,8 @@ public class StarFall : MonoBehaviour
                 rb.gravityScale = 1;
                 _darker.darker_Event.Invoke();
                 _skyManager.FallenStars(gameObject);
-                Services.AudioManager.starFall_Event.Invoke();
+                starsFalling();
+//                Services.AudioManager.starFall_Event.Invoke();
                 touched = true;
             }
         }

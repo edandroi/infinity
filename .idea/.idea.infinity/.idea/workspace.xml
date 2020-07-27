@@ -86,11 +86,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -170,6 +170,7 @@
       <workItem from="1595687139812" duration="13939000" />
       <workItem from="1595818802445" duration="130000" />
       <workItem from="1595818996758" duration="193000" />
+      <workItem from="1595874147095" duration="383000" />
     </task>
     <servers />
   </component>

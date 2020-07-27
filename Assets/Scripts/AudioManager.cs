@@ -203,10 +203,11 @@ public class AudioManager : MonoBehaviour
         starsRevealList.Remove(starsRevealList[i]);
     }
 
+    // This is not in use anymore
     public void starsFalling()
     {
-        _effects.volume = .9f;
-        _effects.pitch = Random.Range(.85f, 1f);
+        _effects.volume = 1f;
+        _effects.pitch = Random.Range(.85f, 1.1f);
         _effects.PlayOneShot(starFallSfx);
     }
 
