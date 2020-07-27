@@ -179,7 +179,7 @@ MonoBehaviour:
   - He and his wife Lotte committed suicide in 1942.
   - They thought, they would never see the world of yesterday again.
   - Only 3 years later, Hitler lost and the war ended.
-  timer: 6
+  timer: 5
 --- !u!114 &85973332
 MonoBehaviour:
   m_ObjectHideFlags: 0

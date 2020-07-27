@@ -35,12 +35,6 @@ public class TextObject : MonoBehaviour
         ChangeText();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void ChangeText()
     {
         textObj.SetText(_exploreManager.textNow);

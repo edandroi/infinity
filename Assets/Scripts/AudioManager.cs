@@ -95,7 +95,8 @@ public class AudioManager : MonoBehaviour
         shapesFx_Event.AddListener(shapesSfx);
         
         // 04Grief scene sound fx
-        starFallSfx = Resources.Load<AudioClip>("Sounds/pop2");
+        starFallSfx = null;
+        starFall_Event.AddListener(starsFalling);
         
         //05Covid scene sound effects
         covidSfx1 = Resources.Load<AudioClip>("Sounds/timpaniLow");

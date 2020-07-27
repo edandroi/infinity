@@ -60,7 +60,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Services.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrawShapes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/SkyManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Light.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpriteAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ButtonInfinity.cs" />
@@ -68,12 +67,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Credits/Reveal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/Darker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScaleOnHover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/Trail.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/CamShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Covid/Covid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateAround.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RevealGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Intro/ZweigImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AppearAniUi.cs" />
@@ -89,8 +86,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Kid/ShapeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
       </list>
     </option>
   </component>
@@ -167,7 +167,9 @@
       <workItem from="1595335748222" duration="2860000" />
       <workItem from="1595444209937" duration="1162000" />
       <workItem from="1595620660116" duration="1565000" />
-      <workItem from="1595687139812" duration="11616000" />
+      <workItem from="1595687139812" duration="13939000" />
+      <workItem from="1595818802445" duration="130000" />
+      <workItem from="1595818996758" duration="74000" />
     </task>
     <servers />
   </component>
@@ -240,52 +242,52 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>183</line>
+          <line>184</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="107">
             <startOffsets>
-              <option value="4968" />
+              <option value="4982" />
             </startOffsets>
             <endOffsets>
-              <option value="5000" />
+              <option value="5014" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>168</line>
+          <line>169</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="141">
             <startOffsets>
-              <option value="4627" />
+              <option value="4641" />
             </startOffsets>
             <endOffsets>
-              <option value="4666" />
+              <option value="4680" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>202</line>
+          <line>203</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="167">
             <startOffsets>
-              <option value="5570" />
+              <option value="5584" />
             </startOffsets>
             <endOffsets>
-              <option value="5571" />
+              <option value="5585" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>102</line>
+          <line>103</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="98">
             <startOffsets>
-              <option value="2929" />
+              <option value="2943" />
             </startOffsets>
             <endOffsets>
-              <option value="2962" />
+              <option value="2976" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />

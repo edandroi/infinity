@@ -51,6 +51,8 @@ public class GetUp : MonoBehaviour
         {
             Services.GameManager.nextScene = true;
         }
+        
+        Debug.Log("next scene is "+Services.GameManager.nextScene);
     }
 
     public int spriteNum = 0;
@@ -68,23 +70,30 @@ public class GetUp : MonoBehaviour
 
     public void MoveXPos()
     {
-        Vector3 newPos = new Vector3(Random.Range(-transform.position.x - 1f, -transform.position.x + 1f), transform.position.y, 0);
-        transform.position = newPos;
+        if (!Services.GameManager.nextScene)
+        {
+            Vector3 newPos = new Vector3(Random.Range(-transform.position.x - 2f, -transform.position.x + 2f), transform.position.y, 0);
+            transform.position = newPos;
+        }
     }
 
+    IEnumerator NewPos(float seconds)
+    {
+        yield return new WaitForSecondsRealtime(seconds);
+        ChangeSprite();
+        MoveXPos();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (spriteNum < sprites.Length)
+            if (spriteNum < sprites.Length && spriteNum != sprites.Length-1) ;
             {
-                ChangeSprite();
-                MoveXPos();   
+                StartCoroutine(NewPos(.5f)); 
             }
         }
     }
-
 
     private bool started = false;
     void MousePos()
