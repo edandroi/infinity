@@ -39,6 +39,9 @@ public class AudioManager : MonoBehaviour
     public UnityEvent covid_Event;
     private AudioClip covidSfx1;
     private AudioClip covidSfx2;
+    
+    //09Ending sfx
+    private AudioClip creditsFx;
 
     private AudioClip flap1;
 
@@ -105,7 +108,10 @@ public class AudioManager : MonoBehaviour
         
         
         //08Ending sfx
-        flap1 = Resources.Load<AudioClip>("Sounds/flap3");
+        flap1 = Resources.Load<AudioClip>("Sounds/flap4");
+        
+        //09Credits sfx
+        creditsFx = Resources.Load<AudioClip>("Sounds/cin2");
         
     }
     
@@ -141,6 +147,25 @@ public class AudioManager : MonoBehaviour
                 _audioSource.volume = Mathf.Lerp(_audioSource.volume, -.5f, .9f * Time.deltaTime);
             }
         }
+        
+        if (SceneManager.GetActiveScene().name == "09Credits")
+        {
+            if (end)
+            {
+                _audioSource.clip = creditsFx;
+                _audioSource.pitch = -.1f;
+                _audioSource.loop = true;
+                _audioSource.Play();
+                end = false;
+            }
+
+            
+            if (_audioSource.volume < .5f)
+            {
+                _audioSource.volume = Mathf.Lerp(_audioSource.volume, .4f, .05f * Time.deltaTime);
+            }
+                
+        }
     }
 
     void startMusic()
@@ -164,7 +189,7 @@ public class AudioManager : MonoBehaviour
         }
 
         int i = Random.Range(0, shapesSfxList.Count);
-        _effects.volume = .6f;
+        _effects.volume = .5f;
         _effects.pitch = Random.Range(.8f, 1f);
         _effects.PlayOneShot(shapesSfxList[i]);
         shapesSfxList.Remove(shapesSfxList[i]);
@@ -173,7 +198,7 @@ public class AudioManager : MonoBehaviour
     
     public void circlesFx()
     {
-        _effects.volume = .7f;
+        _effects.volume = .5f;
         _effects.pitch = Random.Range(.6f, .9f);
         _effects.PlayOneShot(circlesSfx);
     }
