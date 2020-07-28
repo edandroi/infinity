@@ -87,10 +87,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ending/Bird.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stars/Stars.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Grief/StarFall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/ExploreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GetUp/GetUp.cs" />
       </list>
     </option>
   </component>
@@ -174,7 +174,9 @@
       <workItem from="1595878721949" duration="1099000" />
       <workItem from="1595895184908" duration="539000" />
       <workItem from="1595896113147" duration="1937000" />
-      <workItem from="1595958922731" duration="788000" />
+      <workItem from="1595958922731" duration="1301000" />
+      <workItem from="1595960640600" duration="196000" />
+      <workItem from="1595960866064" duration="1351000" />
     </task>
     <servers />
   </component>
@@ -247,55 +249,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>215</line>
+          <line>221</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="107">
             <startOffsets>
-              <option value="5956" />
+              <option value="6113" />
             </startOffsets>
             <endOffsets>
-              <option value="5988" />
+              <option value="6145" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>200</line>
+          <line>206</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="141">
             <startOffsets>
-              <option value="5615" />
+              <option value="5772" />
             </startOffsets>
             <endOffsets>
-              <option value="5654" />
+              <option value="5811" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>234</line>
+          <line>240</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="167">
             <startOffsets>
-              <option value="6558" />
+              <option value="6715" />
             </startOffsets>
             <endOffsets>
-              <option value="6559" />
+              <option value="6716" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs</url>
-          <line>108</line>
+          <line>111</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" initialLine="98">
             <startOffsets>
-              <option value="3097" />
+              <option value="3157" />
             </startOffsets>
             <endOffsets>
-              <option value="3130" />
+              <option value="3190" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Explore/TextObject.cs" initialLine="50">
+            <startOffsets>
+              <option value="1442" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1573" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

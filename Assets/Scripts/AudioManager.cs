@@ -40,6 +40,9 @@ public class AudioManager : MonoBehaviour
     private AudioClip covidSfx1;
     private AudioClip covidSfx2;
     
+    //06Explore sfx
+    private AudioClip exploreSfx1;
+    
     //09Ending sfx
     private AudioClip creditsFx;
 
@@ -107,6 +110,9 @@ public class AudioManager : MonoBehaviour
         covidSfx1 = Resources.Load<AudioClip>("Sounds/timpaniLow");
 //        covidSfx2 = Resources.Load<AudioClip>("Sounds/timpaniRoll");
         covid_Event.AddListener(covidFX);
+        
+        //06Explore Sfx
+        exploreSfx1 = Resources.Load<AudioClip>("Sounds/xlo1");
         
         //07GetUp
         footstepSfx =  Resources.Load<AudioClip>("Sounds/footstep1");
@@ -267,5 +273,12 @@ public class AudioManager : MonoBehaviour
     {
         _effects.volume = 1f;
         _effects.PlayOneShot(runSfx);
+    }
+
+    public void exploreFx()
+    {
+        _effects.volume = 1f;
+        _effects.pitch = Random.Range(1f, 1.3f);
+        _effects.PlayOneShot(exploreSfx1);
     }
 }

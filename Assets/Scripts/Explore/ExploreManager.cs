@@ -55,6 +55,7 @@ public class ExploreManager : MonoBehaviour
             PickText();
             _displayText.textChanged_Event.Invoke();
             counter++;
+            Services.AudioManager.exploreFx();
             changeText = false;
         }
 
