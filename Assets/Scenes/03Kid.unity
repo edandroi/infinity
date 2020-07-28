@@ -514,16 +514,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8306955855043856426, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855043856427, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_IgnoreReversedGraphics
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8306955855043856854, guid: debca12491cf34acb969a428188a7577,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -628,26 +618,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_text
-      value: The world is infinite when you are a kid.
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 41
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: debca12491cf34acb969a428188a7577, type: 3}

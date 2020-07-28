@@ -30,10 +30,13 @@ public class ExploreManager : MonoBehaviour
         {
             allTextList.Add(exploreItems[i]);
         }
+//        Debug.Log(exploreItems.Length);
     }
     
     void Update()
     {
+        //!----First version with the timer-----!
+        /*
         if (Services.Player.mouseMoving())
         {
             remainingTime -= Time.deltaTime;
@@ -43,7 +46,10 @@ public class ExploreManager : MonoBehaviour
                 remainingTime = changeTextTimer;
             }
         }
+        */
 
+        
+        
         if (changeText)
         {
             PickText();

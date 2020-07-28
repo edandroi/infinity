@@ -45,7 +45,9 @@ public class AudioManager : MonoBehaviour
 
     private AudioClip flap1;
 
-
+    public UnityEvent run_Event;
+    private AudioClip footstepSfx;
+    private AudioClip runSfx;
     private void Awake()
     {
         if (instance == null)
@@ -106,6 +108,10 @@ public class AudioManager : MonoBehaviour
 //        covidSfx2 = Resources.Load<AudioClip>("Sounds/timpaniRoll");
         covid_Event.AddListener(covidFX);
         
+        //07GetUp
+        footstepSfx =  Resources.Load<AudioClip>("Sounds/footstep1");
+        runSfx = Resources.Load<AudioClip>("Sounds/run1");
+        run_Event.AddListener(runFx);
         
         //08Ending sfx
         flap1 = Resources.Load<AudioClip>("Sounds/flap4");
@@ -249,5 +255,17 @@ public class AudioManager : MonoBehaviour
         end = true;
         _effects.volume = 1f;
         _effects.PlayOneShot(flap1);
+    }
+
+    public void footstepFx()
+    {
+        _effects.volume = 1f;
+        _effects.PlayOneShot(footstepSfx);
+    }
+    
+    public void runFx()
+    {
+        _effects.volume = 1f;
+        _effects.PlayOneShot(runSfx);
     }
 }

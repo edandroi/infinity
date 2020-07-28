@@ -6,8 +6,10 @@ using TMPro;
 using UnityEngine.Events;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class TextObject : MonoBehaviour
+public class TextObject : MonoBehaviour, IPointerEnterHandler
 {
     private TextMeshProUGUI textObj;
     private ExploreManager _exploreManager;
@@ -38,6 +40,12 @@ public class TextObject : MonoBehaviour
     void ChangeText()
     {
         textObj.SetText(_exploreManager.textNow);
-        _rect.position = Camera.main.WorldToScreenPoint(new Vector3(Random.Range(-screenSize.x, screenSize.x)*.9f, Random.Range(-screenSize.y, screenSize.y)*.9f));
+        _rect.position = Camera.main.WorldToScreenPoint(new Vector3(Random.Range(-screenSize.x, screenSize.x)*.8f, Random.Range(-screenSize.y, screenSize.y)*.8f));
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("over now");
+        _exploreManager.changeText = true;
     }
 }

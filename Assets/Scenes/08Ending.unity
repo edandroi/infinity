@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -793,8 +793,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
         type: 3}
+      propertyPath: m_text
+      value: And seek infinitely.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
+        type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
         type: 3}
@@ -805,21 +810,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.wordCount
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8306955855344377881, guid: debca12491cf34acb969a428188a7577,
-        type: 3}
-      propertyPath: m_text
-      value: and seek infinitely...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: debca12491cf34acb969a428188a7577, type: 3}

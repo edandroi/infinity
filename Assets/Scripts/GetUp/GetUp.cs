@@ -45,13 +45,20 @@ public class GetUp : MonoBehaviour
     private movePos currentPos;
     movePos prePos;
 
+    private bool run = false;
     void Update()
     {
         if (spriteNum == sprites.Length - 1 ) // if we reach the final sprite
         {
             Services.GameManager.nextScene = true;
         }
-        
+
+        if (run)
+        {
+            Services.AudioManager.run_Event.Invoke();
+            run = false;
+        }
+
         Debug.Log("next scene is "+Services.GameManager.nextScene);
     }
 
@@ -72,6 +79,7 @@ public class GetUp : MonoBehaviour
     {
         if (!Services.GameManager.nextScene)
         {
+            Services.AudioManager.footstepFx();
             Vector3 newPos = new Vector3(Random.Range(-transform.position.x - 2f, -transform.position.x + 2f), transform.position.y, 0);
             transform.position = newPos;
         }
@@ -91,6 +99,11 @@ public class GetUp : MonoBehaviour
             if (spriteNum < sprites.Length && spriteNum != sprites.Length-1) ;
             {
                 StartCoroutine(NewPos(.5f)); 
+            }
+
+            if (spriteNum == sprites.Length - 1)
+            {
+                run = true;
             }
         }
     }
