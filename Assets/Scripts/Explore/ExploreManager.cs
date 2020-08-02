@@ -13,7 +13,7 @@ public class ExploreManager : MonoBehaviour
     private TextObject _displayText;
 
     private float remainingTime;
-    public float changeTextTimer;
+    private float changeTextTimer = .5f;
 
     private int counter = 0;
     public int target = 10;
@@ -30,37 +30,42 @@ public class ExploreManager : MonoBehaviour
         {
             allTextList.Add(exploreItems[i]);
         }
-//        Debug.Log(exploreItems.Length);
+        PickText();
     }
     
     void Update()
     {
-        //!----First version with the timer-----!
-        /*
-        if (Services.Player.mouseMoving())
+        if (counter < target)
         {
-            remainingTime -= Time.deltaTime;
-            if (remainingTime <= 0)
+            if (changeText)
             {
-                changeText = true;
-                remainingTime = changeTextTimer;
-            }
+                remainingTime -= Time.deltaTime;
+                
+                if (remainingTime <= 0)
+                {
+                    PickText();
+                    _displayText.textChanged_Event.Invoke();
+                    Services.AudioManager.exploreFx();
+                    counter++;
+                    remainingTime = changeTextTimer;
+                    changeText = false;
+                }
+               
+            }   
         }
-        */
-
-        
-        
-        if (changeText)
+        else if (counter == target)
         {
-            PickText();
-            _displayText.textChanged_Event.Invoke();
-            counter++;
-            Services.AudioManager.exploreFx();
-            changeText = false;
-        }
-
-        if (counter >= target)
+//            _displayText.textObj.text = "Explore";
+            StartCoroutine(EndText());
             Services.GameManager.nextScene = true;
+        }
+    }
+
+    IEnumerator EndText()
+    {
+        yield return new WaitForSeconds(.3f);
+        PickText();
+        _displayText.textObj.text = textNow;
     }
 
     void CreateTextArray()

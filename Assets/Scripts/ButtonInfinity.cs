@@ -14,6 +14,7 @@ public class ButtonInfinity : MonoBehaviour,  IPointerEnterHandler
     {
         if (!touched)
         {
+            Services.AudioManager.starsCompleted_Event.Invoke();
             Instantiate(particles, Services.Player.transform.position, Quaternion.identity);
             touched = true;
         }

@@ -58,8 +58,7 @@ public class GetUp : MonoBehaviour
             Services.AudioManager.run_Event.Invoke();
             run = false;
         }
-
-        Debug.Log("next scene is "+Services.GameManager.nextScene);
+        
     }
 
     public int spriteNum = 0;

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
@@ -8,10 +9,11 @@ using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Random = UnityEngine.Random;
 
 public class TextObject : MonoBehaviour, IPointerEnterHandler
 {
-    private TextMeshProUGUI textObj;
+    public TextMeshProUGUI textObj;
     private ExploreManager _exploreManager;
 
     float w;
@@ -42,28 +44,76 @@ public class TextObject : MonoBehaviour, IPointerEnterHandler
 
         newPos = transform.position;
         
-        ChangeText();
+        textObj.SetText(_exploreManager.textNow);
     }
+
+    private void Update()
+    {
+        if (playParticles)
+        {
+            ParticleShow();
+        }
+    }
+
 
     private Vector3 newPos;
     void ChangeText()
     {
-        Vector3 particlePos = newPos;
-        particleObj.transform.position = newPos;
-        textObj.SetText(_exploreManager.textNow);
+        Vector3 formerPos = transform.position;
+        CalculateNewScreenPos();
+
+        // if new position is too close to the old one, change again
+        if (Mathf.Abs(newPos.x - formerPos.x) > 4f || Mathf.Abs(newPos.y - formerPos.y) > 4f)
+        {
+            // we tell the manager to pick a new text
+            textObj.SetText(_exploreManager.textNow);
+            _rect.position = Camera.main.WorldToScreenPoint(newPos);
+        }
+        else
+        {
+            CalculateNewScreenPos();
+        }
+
+    }
+
+    void CalculateNewScreenPos()
+    {
         newPos = new Vector3(Random.Range(-screenSize.x, screenSize.x) * .8f,
             Random.Range(-screenSize.y, screenSize.y) * .8f);
-        _rect.position = Camera.main.WorldToScreenPoint(newPos);
-        ParticleShow();
+
+        if (newPos.x < 0)
+        {
+            newPos.x = Mathf.Clamp(newPos.x, -3, -screenSize.x * .8f);
+        }
+        else
+        {
+            newPos.x = Mathf.Clamp(newPos.x, 3, screenSize.x * .8f);
+        }
+
+        if (newPos.y < 0)
+        {
+            newPos.y = Mathf.Clamp(newPos.y, -2, -screenSize.y * .8f);
+        }
+        else
+        {
+            newPos.y = Mathf.Clamp(newPos.y, 2, screenSize.x * .8f);
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        _exploreManager.changeText = true;
+        if (!Services.GameManager.nextScene)
+        {
+            playParticles = true;
+            _exploreManager.changeText = true;   
+        }
     }
 
-    void ParticleShow()
+    private bool playParticles = false;
+    public void ParticleShow()
     {
+        particleObj.transform.position = newPos;
         particles.Play();
+        playParticles = false;
     }
 }

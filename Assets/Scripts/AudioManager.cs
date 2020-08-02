@@ -42,6 +42,8 @@ public class AudioManager : MonoBehaviour
     
     //06Explore sfx
     private AudioClip exploreSfx1;
+    private AudioClip[] exploreSfxArray = new AudioClip[7];
+    private List<AudioClip> exploreList;
     
     //09Ending sfx
     private AudioClip creditsFx;
@@ -77,7 +79,6 @@ public class AudioManager : MonoBehaviour
         
         // for the bg music to start later
         _startMusic.AddListener(startMusic);
-
         
         //01Stars scene sfx
         starsCompletedSfx = Resources.Load<AudioClip>("Sounds/zil2");
@@ -113,6 +114,21 @@ public class AudioManager : MonoBehaviour
         
         //06Explore Sfx
         exploreSfx1 = Resources.Load<AudioClip>("Sounds/xlo1");
+
+        foreach (AudioClip audio in exploreSfxArray)
+        {
+            for (int i = 0; i < exploreSfxArray.Length; i++)
+            {
+                int num = i + 1;
+                exploreSfxArray[i] = Resources.Load<AudioClip>("Sounds/xlo"+ num);
+            }
+        }
+
+        exploreList = new List<AudioClip>();
+        for (int i = 0; i < exploreSfxArray.Length; i++)
+        {
+            exploreList.Add(exploreSfxArray[i]);
+        }
         
         //07GetUp
         footstepSfx =  Resources.Load<AudioClip>("Sounds/footstep1");
@@ -124,12 +140,10 @@ public class AudioManager : MonoBehaviour
         
         //09Credits sfx
         creditsFx = Resources.Load<AudioClip>("Sounds/cin2");
-        
     }
     
     void Update()
     {
-//        Debug.Log("shpaes list "+shapesSfxList.Count);
         // turn on music at the start
         if (turnOnVol)
         {
@@ -152,6 +166,7 @@ public class AudioManager : MonoBehaviour
             }
         }
 
+        // turn down the vol at the end
         if (end)
         {
             if (_audioSource.volume > 0)
@@ -170,13 +185,11 @@ public class AudioManager : MonoBehaviour
                 _audioSource.Play();
                 end = false;
             }
-
             
             if (_audioSource.volume < .5f)
             {
                 _audioSource.volume = Mathf.Lerp(_audioSource.volume, .4f, .05f * Time.deltaTime);
             }
-                
         }
     }
 
@@ -265,20 +278,30 @@ public class AudioManager : MonoBehaviour
 
     public void footstepFx()
     {
-        _effects.volume = 1f;
+        _effects.volume = .2f;
         _effects.PlayOneShot(footstepSfx);
     }
     
     public void runFx()
     {
-        _effects.volume = 1f;
+        _effects.volume = .2f;
         _effects.PlayOneShot(runSfx);
     }
 
     public void exploreFx()
     {
-        _effects.volume = 1f;
-        _effects.pitch = Random.Range(1f, 1.3f);
-        _effects.PlayOneShot(exploreSfx1);
+        if (exploreList.Count == 0)
+        {
+            // if our list is empty, we add the same sounds again and use
+            for (int s = 0; s < exploreSfxArray.Length; s++)
+            {
+                exploreList.Add(exploreSfxArray[s]);
+            }
+        }
+
+        int i = Random.Range(0, exploreList.Count);
+        _effects.volume = .4f;
+        _effects.PlayOneShot(exploreList[i]);
+        exploreList.Remove(exploreList[i]);
     }
 }

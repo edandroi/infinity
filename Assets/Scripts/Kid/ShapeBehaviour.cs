@@ -68,9 +68,6 @@ public class ShapeBehaviour : MonoBehaviour
     {
         if (generate)
         {
-            Debug.Log(Services.AudioManager);
-            Debug.Log(Services.GameManager);
-            Debug.Log(Services.Player);
             GenerateShapes();
         }
     }
