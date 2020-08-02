@@ -4,7 +4,7 @@ Injustice
 Friendship
 Compassion
 Anger
-Obsession
+Pandemic
 Bread
 Zoom
 Walks
@@ -28,3 +28,6 @@ Literature
 Plants
 Movies
 Family
+Self
+Loneliness
+Support

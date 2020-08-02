@@ -55,18 +55,25 @@ public class ExploreManager : MonoBehaviour
         }
         else if (counter == target)
         {
-//            _displayText.textObj.text = "Explore";
-            StartCoroutine(EndText());
             Services.GameManager.nextScene = true;
+            if (!endSound)
+            {
+                Services.AudioManager.starsCompleted_Event.Invoke();
+                endSound = true;
+            }
+
+            endTimer -= Time.deltaTime;
+            if (endTimer < 0)
+            {
+                PickText();
+                _displayText.textChanged_Event.Invoke();
+                endTimer = .35f;
+            }
         }
     }
 
-    IEnumerator EndText()
-    {
-        yield return new WaitForSeconds(.3f);
-        PickText();
-        _displayText.textObj.text = textNow;
-    }
+    private float endTimer = .35f;
+    private bool endSound = false;
 
     void CreateTextArray()
     {
@@ -85,8 +92,8 @@ public class ExploreManager : MonoBehaviour
                 allTextList.Add(exploreItems[t]);
             }
         }
-        int i = Random.Range(0, exploreItems.Length);
-        textNow = exploreItems[i];
+        int i = Random.Range(0, allTextList.Count);
+        textNow = allTextList[i];
         allTextList.Remove(allTextList[i]);
     }
 

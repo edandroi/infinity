@@ -42,7 +42,9 @@ public class TextObject : MonoBehaviour, IPointerEnterHandler
         
         textChanged_Event.AddListener(ChangeText);
 
-        newPos = transform.position;
+        // for particles to spawn in the correct position, we need to set the position of the text at the start
+        newPos = Camera.main.ScreenToWorldPoint(new Vector2(_rect.position.x, _rect.position.y));
+        newPos = new Vector3(newPos.x, newPos.y, 90);
         
         textObj.SetText(_exploreManager.textNow);
     }
@@ -110,7 +112,7 @@ public class TextObject : MonoBehaviour, IPointerEnterHandler
     }
 
     private bool playParticles = false;
-    public void ParticleShow()
+    void ParticleShow()
     {
         particleObj.transform.position = newPos;
         particles.Play();
